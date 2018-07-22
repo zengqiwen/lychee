@@ -1,0 +1,56 @@
+.foot-bg {
+	width: 100%;
+	background: #131519;
+	.foot {
+		max-width: 1200px;
+		margin: 0 auto;
+		height: 300px;
+		color: #fff;
+		.foot-left {
+			float: left;
+			width: 20%;
+			margin-top: 60px;
+			img {
+				display: block;
+			}
+		}
+		.foot-right {
+			float: left;
+			width: 80%;
+			display: flex;
+			justify-content: space-between;
+			.foot-list {
+				margin-top: 120px;
+				li {
+					color: #999;
+					line-height: 30px;
+					a {
+						color: #999;
+					}
+					.fa {
+						width: 20px;
+						text-align: center;	
+						margin-right: 10px; 	
+					}
+				}
+				.foot-list-title {
+					font-weight: bold;
+					font-size: 16px;
+					line-height: 16px;
+					margin-bottom: 20px;
+					color: #fff;
+				}
+			}
+		
+		}
+
+	}
+	.copyRight {
+		width: 100%;
+		text-align: center;
+		height: 100px;
+		line-height: 100px;
+		color: #666;
+		background: #000;
+	}
+}

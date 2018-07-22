@@ -1,0 +1,17 @@
+.about {
+	width: 100%;
+	.about_lamp {
+		width: 100%;
+	}
+	.about_nav {
+		// max-width: 1200px;
+		// margin: 0 auto;
+		.el-tabs__header {
+			margin-bottom: 0;
+		}
+		.el-tabs__nav-scroll {
+			max-width: 1200px;
+			margin: 0 auto;
+		}		
+	}
+}

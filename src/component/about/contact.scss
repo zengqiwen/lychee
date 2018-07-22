@@ -1,0 +1,84 @@
+.contact{
+	max-width: 1200px;
+	padding-top: 18px;
+	margin: 0 auto;
+	h1 {
+		text-align: center;
+		color: #0579cb;
+		font-size: 28px;
+		line-height: 68px;
+		border-bottom: 2px solid #ebebeb;
+		position: relative;
+		margin-bottom: 40px;
+	}
+	h1:after {
+		content: '';
+		display: block;
+		width: 10px;
+		height: 10px;
+		background: #ddd;
+		position: absolute;
+		bottom:-5px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		transform:rotate(45deg);
+		-ms-transform:rotate(45deg); 	/* IE 9 */
+		-moz-transform:rotate(45deg); 	/* Firefox */
+		-webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+		-o-transform:rotate(45deg); 	/* Opera */
+	}
+	.contact_msg {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		padding: 70px 12.5% 35px 12.5%;
+		background: #f5f6f8;
+		.el-card {
+			width: 30%;
+			height: 260px;
+			position: relative;
+			overflow: visible;
+			img {
+				position: absolute;
+				left: 50%;
+				top: -45px;
+				margin-left: -48px;
+				z-index: 99;
+			}
+			h3 {
+				font-size: 16px;
+				text-align: center;
+				margin-top: 70px;
+			}
+			.contact_detail {
+				font-size: 16px;
+				line-height: 24px;
+				color: #777;
+				text-align: center;
+				margin-top: 30px;
+				height: 48px;
+			}
+			button {
+				width: 100px;
+				height: 34px;
+				font-size: 13px;
+				color: #fff;
+				border: none;
+				outline: none;
+				cursor: pointer;
+				display: block;
+				margin: 0 auto;
+				margin-top: 8px;
+			}
+		}
+	}
+	.contact_map {
+		img {
+			display: block;
+			width: 100%;
+			margin: 40px 0 110px 0 ;
+		}
+	}
+}

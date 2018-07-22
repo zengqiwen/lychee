@@ -1,0 +1,98 @@
+.join_bg {
+	width: 100%;
+	background: #f5f6f8;
+	padding-top: 60px;
+	.join {
+		max-width: 1200px;
+		margin: 0 auto;
+		min-width: 768px;
+		overflow: hidden;
+		.job_list {
+			.job_item {
+				padding: 18px 45px 25px 40px;
+				position: relative;
+				margin-bottom: 20px;
+				background: #fff;
+
+				h3 {
+					font-size: 21px;
+					line-height: 47px;
+					color: #0579cb;
+					span {
+						float: right;
+						display: block;
+						height: 100%;
+						font-size: 13px;
+						line-height: 47px;
+						color: #999;
+					}
+				}
+				.openAndClose {
+					width: 60px;
+					height: 30px;
+					position: absolute;
+					right: 45px;
+					top: 90px;
+					font-size: 16px;
+					cursor: pointer;
+					span {
+						display: block;
+						width: 100%;
+						height: 100%;
+						position: absolute;
+						left: 0;
+						top: 7px;
+						z-index: 999;
+					}
+					.el-icon-arrow-up {
+						position: absolute;
+						right: 0;
+						top: 10px;
+					}
+				}
+				.job {
+					h4 {
+						font-size: 16px;
+						line-height: 34px;
+						color: #91bb4f;
+						margin-top: 11px;
+					}
+					.job_desc_one {
+						li {
+							font-size: 16px;
+							line-height: 28px;
+							color: #222;
+						}
+					}
+					.job_desc {
+						list-style-type:none;
+						counter-reset:sectioncounter;
+						li {
+							font-size: 16px;
+							line-height: 28px;
+							color: #222;
+						}
+						li:before {
+       						content:counter(sectioncounter) "、"; 
+       						counter-increment:sectioncounter;
+       					}
+					}
+					button {
+						width: 120px;
+						height: 40px;
+						box-sizing: border-box;
+						color: #0579cb;
+						border: 1px solid #0579cb;
+						background: #fff;
+						margin: 15px 0;
+					}
+				}
+			}
+		}
+		.el-collapse-item__header {
+			span {
+				float: right;
+			}
+		}
+	}
+}

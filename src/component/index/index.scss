@@ -1,0 +1,215 @@
+.index {
+  width: 100%;
+
+  .el-carousel {
+    height: 620px;
+    width: 100%;
+    .el-carousel__container {
+      height: 100%;
+    }
+    .el-carousel__item {
+      height: 100%;
+      h3 {
+        color: #475669;
+        font-size: 18px;
+        opacity: 0.75;
+        line-height: 620px;
+        margin: 0;
+        text-align: center;
+      }
+    }
+    .el-carousel__item:nth-child(2n) {
+      background-color: #99a9bf;
+    }
+    
+    .el-carousel__item:nth-child(2n+1) {
+      background-color: #d3dce6;
+    }
+  }
+  .index_ygpt_bg {
+    width: 100%;
+    background: #f5f6f8;  
+    .index_ygpt {
+      max-width: 1200px;
+      margin: 0 auto;
+      overflow: hidden;
+      padding-top: 110px;
+      height: 590px;
+      .lf_title {
+        margin-bottom: 45px;
+        h2 {
+          font-size: 34px;
+          margin-bottom: 24px;
+        }
+        h3 {
+          font-size: 24px;
+          margin-bottom: 15px;
+        }
+        p {
+          font-size: 18px;
+          color: #888;
+        }
+        button {
+          width: 132px;
+          height: 48px;
+          border-radius: 24px;
+          color: #1fb9ff;
+          border: 2px solid #1fb9ff;
+          margin-top: 50px;
+          background: #fff;
+        }
+        .el-button--primary {
+          color: #fff;
+        }
+      }
+      .rf_picture {
+        position: relative;
+        img {
+          width: 80%;
+          display: block;
+          position: absolute;
+          // left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+        }
+      }
+    }
+  }
+  .index_yqd {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 500px;
+    padding-top: 150px;
+    .lf_picture {
+      position: relative;
+      img {
+        width: 80%;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        // right: 0;
+        // bottom: 0;
+        margin: auto;
+      }
+    }
+    .rf_title {
+      margin-bottom: 45px;
+      h2 {
+        font-size: 34px;
+        margin-bottom: 24px;
+      }
+      h3 {
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
+      p {
+        font-size: 18px;
+        color: #888;
+      }
+      button {
+        width: 132px;
+        height: 48px;
+        border-radius: 24px;
+        color: #1fb9ff;
+        border: 2px solid #1fb9ff;
+        margin-top: 50px;
+        background: #fff;
+      }
+      .el-button--primary {
+        color: #fff;
+      }
+    }
+  }
+  .index_qkl_bg {
+    width: 100%;
+    background: #f5f6f8;
+    .index_qkl {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-top: 80px;
+      height: 620px;
+      h2 {
+        font-size: 35px;
+        line-height: 45px;
+      }
+      p {
+        font-size: 26px;
+        line-height: 36px;
+        margin-bottom: 30px;
+      }
+      .content_list {
+        padding-top: 10px;
+        li {
+          min-width: 250px;
+
+          font-size: 24px;
+          line-height: 62px;
+          color: #424242;
+          list-style: disc inside;
+        }
+      }
+      button {
+        width: 132px;
+        height: 48px;
+        border-radius: 24px;
+        color: #1fb9ff;
+        border: 2px solid #1fb9ff;
+        margin-top: 50px;
+        background: #fff;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+      .content_desc {
+        font-size: 16px;
+        line-height: 24px;
+        color: #888;
+        margin-top: 60px;
+      }
+    }
+  }
+  .index_cooperate_bg {
+    width: 100%;
+    background: #f5f6f8;
+    .index_cooperate {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-bottom: 90px;
+      h2 {
+        display: inline-block;
+        width: 100%;
+        font-size: 22px;
+        text-align: center;
+        margin: 60px 0 90px 0;
+      }
+      .cooperate_list {
+        width: 100%;
+        .el-col {
+          height: 100px;
+          min-width: 200px;
+          margin-bottom: 20px;
+          div {
+            position: relative;
+            background: #fff;
+            min-width: 200px;
+
+            height: 100%;
+            img {
+              display: block;
+              position: absolute;
+              left: 0;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              margin: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
