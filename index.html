@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8"> 
     <title>meixiApp</title>
-    <link rel="stylesheet" href="node_modules/element-ui/lib/theme-default/index.css">
+    <link rel="stylesheet" href="node_modules/element-ui/lib/theme-chalk/index.css">
 
     <link rel="stylesheet" href="src/assets/icon-font/ziti.css">
     <link rel="stylesheet" href="src/assets/common/animate.css">
@@ -13,9 +13,12 @@
     <script src="src/assets/jquery/jquery-3.2.1.min.js"></script>
     <script src="src/assets/socket/socket.io.min.js"></script>
     <script type="text/javascript">     
-      // var deviceWidth = document.documentElement.clientWidth;   
-      // document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
-      //1rem=100px  就是所有的css属性的属性值都是用rem来表示
+      
+      //固定定位水平滚动。
+      window.onscroll=function(){
+          var sl=-Math.max(document.body.scrollLeft,document.documentElement.scrollLeft);
+          document.getElementById('fixed').style.left=sl+'px';
+      }
     </script>
   </head>
   <body>

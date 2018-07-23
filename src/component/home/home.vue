@@ -1,16 +1,16 @@
 <template>
 	<div class="mx-home">
-		<div class="mx-header">
+		<div class="mx-header" id = "fixed">
 			<el-row class = "header_bg">
 				<el-col :span = "8" class = "logo">
 					<img src="../../assets/imgs/logo.png">
 				</el-col>
 				<el-col :span="16">
-					<el-menu default-active="0" class="el-menu-demo" mode="horizontal" @select="handleSelect" style = "border: none">
+					<el-menu default-active="0" class="el-menu-demo" mode="horizontal" @select="handleSelect" style = "border: none" text-color="#666">
 						<el-menu-item  
 							v-for="(item,index) in $router.options.routes[0].children" 
 							:index="index.toString()"
-							key = "index" 
+							:key = "index" 
 							@click="$router.push(item.path)">
 								<el-row>
 									<el-col :span="24">

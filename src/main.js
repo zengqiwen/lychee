@@ -17,7 +17,7 @@ import animate from 'animate.css';
 
 //Element UI;
 import ElementUI from 'element-ui';
-import '../node_modules/element-ui/lib/theme-default/index.css';
+import '../node_modules/element-ui/lib/theme-chalk/index.css';
 import './assets/font-awesome/css/font-awesome.css';
 
 //基于Element UI的全国地区三级联动；

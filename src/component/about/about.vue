@@ -1,7 +1,6 @@
 <template>
 	<div class="about">
-
-		<img :src='"src/assets/imgs/" + picture' class = "about_lamp">
+	    <img :src='"src/assets/imgs/" + picture' class = "about_lamp wow slideInLeft">
 		<div class="about_nav">
 			<el-tabs v-model="activeName" @tab-click="handleClick" style = "border: none">
 			    <el-tab-pane label="立趣简介" name="first"><Jianjie></Jianjie></el-tab-pane>

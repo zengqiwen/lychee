@@ -1,0 +1,28 @@
+.method {
+	width: 100%;
+	position: relative;
+	.method_lamp {
+		width: 100%;
+		position: relative;
+		img {
+			width: 100%;
+			display: block;
+		}
+		.method_title {
+			position: absolute;
+			left: 10%;
+			bottom: 10%;
+		}
+	}
+	.method_nav {
+		// max-width: 1200px;
+		// margin: 0 auto;
+		.el-tabs__header {
+			margin-bottom: 0;
+		}
+		.el-tabs__nav-scroll {
+			max-width: 1200px;
+			margin: 0 auto;
+		}		
+	}
+}
