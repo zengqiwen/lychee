@@ -20,9 +20,12 @@
     components: {
       spinner
     },
-    mounted: function(){
-      console.log(123);
+    created: function(){
+      window.scrollTo(0,0);
       this.$router.push('/');
+    },
+    mounted: function(){
+  
     }
   }
 

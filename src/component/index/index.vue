@@ -1,8 +1,10 @@
 <template>
 	<div class="index">
 		<el-carousel :interval="3000" arrow="always">
-		    <el-carousel-item v-for="item in 4" :key="item">
-		    	<h3>{{ item }}</h3>
+		    <el-carousel-item v-for="(item, index) in items" :key="item">
+		    	<img :src="item">
+		    	<button v-if = "index == 0" class = "btn_detail">了解详情</button>
+		    	<button v-if = "index == 1" class = "btn_more">了解更多</button>
 		    </el-carousel-item>
 		</el-carousel>
 		<!-- 翼购平台 -->
@@ -139,7 +141,12 @@
 	export default {
 		data: function(){
 			return {
-				
+				items: [
+					'src/assets/imgs/banner1.jpg',
+					'src/assets/imgs/banner2.jpg',
+					'src/assets/imgs/banner3.jpg',
+					'src/assets/imgs/banner4.jpg'
+				]
 			}
 		},
 		components: {

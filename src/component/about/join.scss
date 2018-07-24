@@ -80,7 +80,9 @@
 					button {
 						width: 120px;
 						height: 40px;
-						box-sizing: border-box;
+						-webkit-box-sizing: border-box;
+						   -moz-box-sizing: border-box;
+						        box-sizing: border-box;
 						color: #0579cb;
 						border: 1px solid #0579cb;
 						background: #fff;

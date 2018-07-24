@@ -46,9 +46,23 @@ Vue.use(animate);
 
 //切换路由回到顶部；
 router.afterEach((to,from,next) => {
-  window.scrollTo(0,0);
+	console.log(111111111111111111)
+  	window.scrollTo(0,0);
 });
 
+////第一次刷新进入时，beforeEach不会被调用，手动调用
+router.beforeEach((to, from, next) => {
+  	window.scrollTo(0,0);
+    var path = router.options.routes[0].children;
+    path.map((item, idx)=>{
+    	if(item.path == to.path){
+    		var num = String(idx);
+    		store.state.home.active = num;
+    		// router.push(to.path);
+    	}
+    })
+    next();
+});
 
 new Vue({
   el: '#app',

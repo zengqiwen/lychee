@@ -17,11 +17,18 @@
 		.foot-right {
 			float: left;
 			width: 80%;
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
 			display: flex;
-			justify-content: space-between;
+			-webkit-box-pack: justify;
+			   -moz-box-pack: justify;
+			    -ms-flex-pack: justify;
+			        justify-content: space-between;
 			.foot-list {
 				margin-top: 120px;
 				li {
+					cursor: pointer;
 					color: #999;
 					line-height: 30px;
 					a {
@@ -34,6 +41,7 @@
 					}
 				}
 				.foot-list-title {
+					cursor: default;
 					font-weight: bold;
 					font-size: 16px;
 					line-height: 16px;

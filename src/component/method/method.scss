@@ -10,13 +10,35 @@
 		}
 		.method_title {
 			position: absolute;
-			left: 10%;
-			bottom: 10%;
+			left: 12%;
+			top: 20%;
+			color: #fff;
+			h1 {
+				font-size: 44px;
+				
+			}
+			p {
+				font-size: 22px;
+				line-height: 62px;
+			}
+			button {
+				width: 200px;
+				height: 50px;
+				margin-top: 35px;
+				background: transparent;
+				border: 1px solid #fff;
+				text-align: center;
+				font-size: 17px;
+				line-height: 50px;
+				color: #fff;
+				-moz-border-radius: 5px;
+				     border-radius: 5px;
+			}
 		}
 	}
 	.method_nav {
-		// max-width: 1200px;
-		// margin: 0 auto;
+		/* max-width: 1200px;*/
+		/* margin: 0 auto;*/
 		.el-tabs__header {
 			margin-bottom: 0;
 		}

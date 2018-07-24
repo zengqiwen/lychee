@@ -8,7 +8,9 @@ const state = {
 	currentId: null,
 	product: [],
 	username: '',
-	idx: ''
+	idx: '',
+	active: '0',
+	activeName: 'first'
 };
 const actions = {
 	timer: (store, n)=>{

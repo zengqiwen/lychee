@@ -14,9 +14,20 @@
 			}
 			.plan_content {
 				margin-top: 45px;
+				display: -webkit-box;
+				display: -moz-box;
+				display: -ms-flexbox;
 				display: flex;
-				flex-direction: row;
-				justify-content: space-between;
+				-webkit-box-orient: horizontal;
+				-webkit-box-direction: normal;
+				   -moz-box-orient: horizontal;
+				   -moz-box-direction: normal;
+				    -ms-flex-direction: row;
+				        flex-direction: row;
+				-webkit-box-pack: justify;
+				   -moz-box-pack: justify;
+				    -ms-flex-pack: justify;
+				        justify-content: space-between;
 				.el-card {
 					width: 48%;
 					height: 450px;
@@ -39,7 +50,8 @@
 							span {
 								width: 8px;
 								height: 8px;
-								border-radius: 50%;
+								-moz-border-radius: 50%;
+								     border-radius: 50%;
 								background: #13b6f9;
 								position: absolute;
 								left: 0;
@@ -107,7 +119,8 @@
 					display: inline-block;
 					width: 8px;
 					height: 8px;
-					border-radius: 50%;
+					-moz-border-radius: 50%;
+					     border-radius: 50%;
 					border: 6px solid #f5f6f8;
 					background: #1fb9ff;
 					position: absolute;
@@ -119,16 +132,30 @@
 				&:after {
 					content: '';
 					display: block;
-					// width: 10px;
+					/* width: 10px;*/
 					height: 1px;
 					background: #cfcfcf;
 				}
 			}
 			.coops {
+				display: -webkit-box;
+				display: -moz-box;
+				display: -ms-flexbox;
 				display: flex;
-				flex-direction: row;
-				flex-wrap: wrap;
-				justify-content: center;
+				-webkit-box-orient: horizontal;
+				-webkit-box-direction: normal;
+				   -moz-box-orient: horizontal;
+				   -moz-box-direction: normal;
+				    -ms-flex-direction: row;
+				        flex-direction: row;
+				
+				-ms-flex-wrap: wrap;
+				
+				    flex-wrap: wrap;
+				-webkit-box-pack: center;
+				   -moz-box-pack: center;
+				    -ms-flex-pack: center;
+				        justify-content: center;
 				padding-top: 100px;
 				.coops_item {
 					width: 300px;

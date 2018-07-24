@@ -8,15 +8,15 @@
 				<ul class = "foot-list">
 					<li class = "foot-list-title">业务</li>
 					
-					<li><router-link to="/company">企业信用</router-link></li>
-					<li>个人信用</li>
+					<li @click = "toCompany">企业信用</li>
+					<li @click = "toPersonal">个人信用</li>
 				</ul>
 				<ul class = "foot-list">
 					<li class = "foot-list-title">关于我们</li>
-					<li>立趣简介</li>
-					<li>加入我们</li>
-					<li>服务条款</li>
-					<li>隐私条约</li>
+					<li @click = "toAbout" data-index = 1>立趣简介</li>
+					<li @click = "toAbout" data-index = 2>加入我们</li>
+					<li data-index = 3>服务条款</li>
+					<li data-index = 4>隐私条约</li>
 				</ul>
 				<ul class = "foot-list">
 					<li class = "foot-list-title">联系我们</li>
@@ -55,7 +55,19 @@
 		
 		},
 		methods: {
-
+			toCompany: function(){
+				this.$router.push('/company');
+			},
+			toPersonal: function(){
+				this.$router.push('/personal');
+			},
+			toAbout: function(e){
+				if(e.target.dataset.index == 2){
+					this.$store.state.home.activeName = "fourth";
+				}
+				window.scrollTo(0,0);
+				this.$router.push('/about');
+			}
 		},
 		created: function(){
 		},

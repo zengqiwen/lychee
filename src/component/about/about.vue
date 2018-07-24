@@ -2,7 +2,7 @@
 	<div class="about">
 	    <img :src='"src/assets/imgs/" + picture' class = "about_lamp wow slideInLeft">
 		<div class="about_nav">
-			<el-tabs v-model="activeName" @tab-click="handleClick" style = "border: none">
+			<el-tabs v-model="myValue" @tab-click="handleClick" style = "border: none">
 			    <el-tab-pane label="立趣简介" name="first"><Jianjie></Jianjie></el-tab-pane>
 			    <el-tab-pane label="新闻中心" name="second"><News></News></el-tab-pane>
 			    <el-tab-pane label="联系我们" name="third"><Contact></Contact></el-tab-pane>
@@ -21,7 +21,7 @@
 	export default {
 		data: function(){
 			return {
-				activeName: 'first',
+				activeName: this.$store.state.home.activeName,
 				picture: 'jianjie.png',
 				picItem: [
 					'jianjie.png',
@@ -36,6 +36,25 @@
 			News,
 			Contact,
 			Join
+		},
+		computed: {
+		    myValue: {
+		        get: function () {
+		        	console.log('get', this.$store.state.home.activeName);
+	              	return this.$store.state.home.activeName;
+	            },
+	            set: function (val) {
+	            }
+		    }
+		},
+		watch:{
+			myValue: {
+				deep: true,
+				handler: function (newVal,oldVal){
+					console.log('newValue', newVal);
+					console.log('oldValue', oldVal);
+				}
+			}
 		},
 		methods: {
 			handleClick(tab, event) {
@@ -57,6 +76,7 @@
 		    }
 		},
 		created: function(){
+
 		},
 		mounted: function(){
 

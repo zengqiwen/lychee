@@ -29,10 +29,20 @@
 		-o-transform:rotate(45deg); 	/* Opera */
 	}
 	.contact_msg {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
-		justify-content: space-around;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		   -moz-box-orient: horizontal;
+		   -moz-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+		-ms-flex-wrap: nowrap;
+		    flex-wrap: nowrap;
+		-ms-flex-pack: distribute;
+		    justify-content: space-around;
 		padding: 70px 12.5% 35px 12.5%;
 		background: #f5f6f8;
 		.el-card {

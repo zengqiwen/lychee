@@ -6,7 +6,7 @@
 					<img src="../../assets/imgs/logo.png">
 				</el-col>
 				<el-col :span="16">
-					<el-menu default-active="0" class="el-menu-demo" mode="horizontal" @select="handleSelect" style = "border: none" text-color="#666">
+					<el-menu :default-active="active" class="el-menu-demo" mode="horizontal" @select="handleSelect" style = "border: none" text-color="#666">
 						<el-menu-item  
 							v-for="(item,index) in $router.options.routes[0].children" 
 							:index="index.toString()"
@@ -29,7 +29,6 @@
 <script>
 	import './home.scss';
 	import Foot from '../foot/foot.vue';
-	import Bscroll from 'better-scroll';
 
 	var wow = new WOW(
 	  {
@@ -57,6 +56,16 @@
 		
 			Foot
 		},
+		computed: {
+			active: {
+				get: function(){
+					return this.$store.state.home.active;
+				},
+				set: function(val){
+
+				}
+			}
+		},
 		methods: {
 			handleSelect(key, keyPath) {
 			    console.log(key, keyPath);
@@ -72,7 +81,7 @@
 			}
 		},
 		created: function(){
-			console.log()
+			
 		},
 		mounted: function(){
 			

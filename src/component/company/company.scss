@@ -4,7 +4,7 @@
 		width: 100%;
 		img {
 			width: 100%;
-			// min-width: 768px;
+			/* min-width: 768px;*/
 		}
 	}
 	.beforeLoan {
@@ -26,10 +26,22 @@
 		.loan_list {
 			margin-top: 95px;
 			margin-bottom: 115px;
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
 			display: flex;
-			flex-direction: row;
-			flex-wrap: wrap;
-			justify-content: space-between;
+			-webkit-box-orient: horizontal;
+			-webkit-box-direction: normal;
+			   -moz-box-orient: horizontal;
+			   -moz-box-direction: normal;
+			    -ms-flex-direction: row;
+			        flex-direction: row;
+			-ms-flex-wrap: wrap;
+			    flex-wrap: wrap;
+			-webkit-box-pack: justify;
+			   -moz-box-pack: justify;
+			    -ms-flex-pack: justify;
+			        justify-content: space-between;
 			img {
 				display: block;
 				margin: 0 auto;
@@ -64,10 +76,22 @@
 			.loaning_list {
 				margin-top: 95px;
 				padding-bottom: 115px;
+				display: -webkit-box;
+				display: -moz-box;
+				display: -ms-flexbox;
 				display: flex;
-				flex-direction: row;
-				flex-wrap: nowrap;
-				justify-content: space-between;
+				-webkit-box-orient: horizontal;
+				-webkit-box-direction: normal;
+				   -moz-box-orient: horizontal;
+				   -moz-box-direction: normal;
+				    -ms-flex-direction: row;
+				        flex-direction: row;
+				-ms-flex-wrap: nowrap;
+				    flex-wrap: nowrap;
+				-webkit-box-pack: justify;
+				   -moz-box-pack: justify;
+				    -ms-flex-pack: justify;
+				        justify-content: space-between;
 				li {
 					width: 300px;
 					padding-top: 60px; 
@@ -149,7 +173,8 @@
 				button {
 					width: 132px;
 					height: 48px;
-					border-radius: 24px;
+					-moz-border-radius: 24px;
+					     border-radius: 24px;
 					color: #1fb9ff;
 					border: 2px solid #1fb9ff;
 					margin-top: 50px;
