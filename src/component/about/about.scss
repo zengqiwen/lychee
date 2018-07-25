@@ -2,6 +2,7 @@
 	width: 100%;
 	.about_lamp {
 		width: 100%;
+		display: block;
 	}
 	.about_nav {
 		/* max-width: 1200px;*/
@@ -12,6 +13,9 @@
 		.el-tabs__nav-scroll {
 			max-width: 1200px;
 			margin: 0 auto;
+			.el-tabs__nav {
+				width: 100%;
+			}
 		}		
 	}
 }

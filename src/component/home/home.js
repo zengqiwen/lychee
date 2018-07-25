@@ -10,7 +10,8 @@ const state = {
 	username: '',
 	idx: '',
 	active: '0',
-	activeName: 'first'
+	activeName: 'first',
+	onresize: false
 };
 const actions = {
 	timer: (store, n)=>{

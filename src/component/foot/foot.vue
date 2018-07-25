@@ -4,6 +4,10 @@
 			<div class="foot-left">
 				<img src="src/assets/imgs/logo_ly.png">
 			</div>
+			<div class="ewm" v-if = "onresize">
+				<img src="src/assets/imgs/index_ewm.png">
+				<p>官网微信</p>
+			</div>
 			<div class="foot-right">
 				<ul class = "foot-list">
 					<li class = "foot-list-title">业务</li>
@@ -31,13 +35,11 @@
 				</ul>
 			</div>
 		</div>
-		<el-row class = "copyRight">
-			<el-col :span="24">
-		  		<div class="">
-		  			版权所有 ©2015-2017 广州立趣信息科技有限公司 粤 ICP 备 15068962 号
-		  		</div>
-			</el-col>
-		</el-row>
+		<div class = "copyRight">
+	  		<p class="">
+	  			版权所有 ©2015-2017 广州立趣信息科技有限公司 粤 ICP 备 15068962 号
+	  		</p>
+		</div>
 
 	</div>
 </template>
@@ -53,6 +55,16 @@
 		},
 		components: {
 		
+		},
+		computed: {
+			onresize: {
+				get: function(){
+					return this.$store.state.home.onresize;
+				},
+				set: function(val){
+
+				}
+			}
 		},
 		methods: {
 			toCompany: function(){
@@ -72,7 +84,7 @@
 		created: function(){
 		},
 		mounted: function(){
-
+			console.log(this.$store.state.home.onresize)
 		}
 
 	}

@@ -11,6 +11,9 @@
 		max-width: 1200px;
 		margin: 0 auto;
 		padding-top: 30px;
+		@media screen and (max-width: 768px) {
+			padding-top: 0;
+		}
 		h3 {
 			font-size: 33px;
 			line-height: 97px;
@@ -22,6 +25,18 @@
 			font-size: 16px;
 			line-height: 26px;
 			color: #696969;
+		}
+		@media screen and (max-width: 768px) {
+			padding-top: 0;
+			h3 {
+				font-size: 24px;
+				line-height: 60px;
+			}
+			p {
+				font-size: 13px;
+				line-height: 20px;
+				padding: 0 10px;
+			}
 		}
 		.loan_list {
 			margin-top: 95px;
@@ -41,29 +56,10 @@
 			-webkit-box-pack: justify;
 			   -moz-box-pack: justify;
 			    -ms-flex-pack: justify;
-			        justify-content: space-between;
+			        justify-content: space-around;
 			img {
 				display: block;
 				margin: 0 auto;
-			}
-		
-			@media screen and (min-width: 320px) {
-				li {
-					width: 33%;
-					margin-bottom: 20px;
-				}
-			}
-/* 			@media screen and (min-width: 768px) {
-				li {
-					width: 33%;
-					margin-bottom: 20px;
-				}
-			} */
-			@media screen and (min-width: 992px) {
-				li {
-					width: 16%;
-					margin-bottom: 20px;
-				}
 			}
 			span {
 				display: block;
@@ -71,6 +67,24 @@
 				color: #696969;
 				margin-top: 10px;
 				font-size: 17px;
+			}
+			@media screen and (max-width: 768px) {
+				margin-top: 0;
+				margin-bottom: 30px;
+				li {
+					width: 30%;
+
+					img {
+						-webkit-transform: scale(0.8);
+						   -moz-transform: scale(0.8);
+						    -ms-transform: scale(0.8);
+						        transform: scale(0.8);
+					}
+					span {
+						margin-top: 0;
+						font-size: 13px;
+					}
+				}
 			}
 		}
 	}
