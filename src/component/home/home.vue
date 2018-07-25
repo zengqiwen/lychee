@@ -3,7 +3,7 @@
 		<div class="mx-header" id = "fixed">
 			<el-row class = "header_bg">
 				<el-col :span = "8" class = "logo">
-					<img src="../../assets/imgs/logo.png">
+					<img src="src/assets/imgs/logo.png">
 				</el-col>
 				<el-col :span="16">
 					<el-menu :default-active="active" class="el-menu-demo" mode="horizontal" @select="handleSelect" style = "border: none" text-color="#666">

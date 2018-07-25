@@ -14,7 +14,7 @@
 		</el-collapse> -->
 		<div class="join">
 			<ul class="job_list">
-				<li class = "job_item wow"  v-for = "(item, index) in 4" :key = "index" v-bind:class="{ slideInLeft : (index%2) == 0 , 'slideInRight': (index%2) != 0  }">
+				<li class = "job_item "  v-for = "(item, index) in 4" :key = "index" v-bind:class="{ slideInLeft : (index%2) == 0 , 'slideInRight': (index%2) != 0  }">
 					<h3 class = "job_name">高级Java软件工程师<span class = "job_date">发布时间：2017-10-01</span></h3>
 					<div class="openAndClose" >
 						<span class = "job_open" v-show = "index == 0?show : !show" @click = "openAndClose">展开</span>
@@ -31,7 +31,7 @@
 						</div>
 					</el-collapse-transition>
 					<el-collapse-transition>
-						<div class="job transition-box wow pulse" v-show = "index == 0?!show : show">
+						<div class="job transition-box" v-show = "index == 0?!show : show">
 							<h4>职责</h4>
 							<ol class = "job_desc">
 								<li>担任BI项目经理，负责BI项目全周期的管理工作;</li>

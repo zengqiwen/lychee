@@ -2,7 +2,7 @@
 	<div class="foot-bg">
 		<div class="foot">
 			<div class="foot-left">
-				<img src="../../assets/imgs/logo_ly.png">
+				<img src="src/assets/imgs/logo_ly.png">
 			</div>
 			<div class="foot-right">
 				<ul class = "foot-list">
@@ -26,7 +26,7 @@
 				</ul>
 				<ul class = "foot-list">
 					<li class = "foot-list-title">官网微信</li>
-					<li><img src="../../assets/imgs/index_ewm.png"></li>
+					<li><img src="src/assets/imgs/index_ewm.png"></li>
 					
 				</ul>
 			</div>

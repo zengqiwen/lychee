@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "name": "course-react",
-=======
   "name": "course-vue",
->>>>>>> a4a92056f4820dfcf1adf27aab3a59dc2342f8e0
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -22,10 +18,7 @@
     "express-session": "^1.15.5",
     "mongodb": "^2.2.31",
     "mysql": "^2.14.1",
-<<<<<<< HEAD
-=======
     "node-taobao-topclient": "^0.1.7",
->>>>>>> a4a92056f4820dfcf1adf27aab3a59dc2342f8e0
     "ws": "^3.1.0"
   }
 }

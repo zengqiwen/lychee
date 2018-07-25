@@ -1,7 +1,7 @@
 <template>
 	<div class="method">
 		<div class="method_lamp">
-			<img :src='"src/assets/imgs/" + picture' class = "wow slideInLeft">
+			<img :src='"src/assets/imgs/" + picture'>
 			<div class="method_title wow slideInLeft">
 				<h1 v-text = "title"></h1>
 				<p v-text = "desc"></p>

@@ -1,7 +1,7 @@
 <template>
 	<div class="news_bg">
 		<ul class="news_list">
-			<li v-for = "(item, index) in news" class = "news_item wow" v-bind:class="{ slideInLeft : (index%2) == 0 , 'slideInRight': (index%2) != 0  }" >
+			<li v-for = "(item, index) in news" class = "news_item" v-bind:class="{ slideInLeft : (index%2) == 0 , 'slideInRight': (index%2) != 0  }" >
 				<el-row>
 					<el-col :span="6">
 				  		<div class="grid-content bg-purple news_imgs">
@@ -36,6 +36,9 @@
 <script>
 	
 	import './news.scss';
+	import url from '../../assets/common/common.js';
+	import axios from 'axios';
+	import qs from 'qs';
 
 	export default {
 		data: function(){
@@ -91,14 +94,10 @@
 
 		},
 		mounted: function(){
-
-			// slice() 方法可从已有的数组中返回选定的元素。
-			// 您可使用负值从数组的尾部选取元素。
-			// 如果 end 未被规定，那么 slice() 方法会选取从 start 到数组结尾的所有元素。
-			// 此处需要根据需求自行修改slice()的值，以达到要显示的内容
-			// var demoHtml = $('.news_item_desc').text().slice(0,10)+'...';
-			// // 填充至指定位置
-			// $('.news_item_desc').text(demoHtml);
+			axios.post(url.global.baseurl + 'test', qs.stringify({test: 'test'})).then(res=>{
+              	console.log(res);
+              
+            });
 		}
 
 	}

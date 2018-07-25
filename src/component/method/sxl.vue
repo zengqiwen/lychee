@@ -1,11 +1,11 @@
 <template>
 	<div class = "sxl">
 		<!-- 智能合约 -->
-		<div class="sxl_contract wow slideInLeft">
+		<div class="sxl_contract">
 			<h2>智能合约</h2>
 			<div class="contract_content">
 				<div class="content_pic">
-					<img src="../../assets/imgs/method_sxl_05.png">
+					<img src="src/assets/imgs/method_sxl_05.png">
 				</div>
 				<div class="content">
 					<p class="content_t">
@@ -18,7 +18,7 @@
 			</div>
 		</div>
 		<!-- 共识机制 -->
-		<div class="sxl_management_bg  wow slideInRight">		
+		<div class="sxl_management_bg ">		
 			<div class="sxl_management">
 				<h2>共识机制</h2>
 				<div class="management_content">
@@ -31,17 +31,17 @@
 						</p>
 					</div>
 					<div class="content_pic">
-						<img src="../../assets/imgs/method_sxl_09.png">
+						<img src="src/assets/imgs/method_sxl_09.png">
 					</div>
 				</div>
 			</div>
 		</div>
 		<!-- 隐私保护 -->
-		<div class="sxl_protect wow slideInLeft">
+		<div class="sxl_protect">
 			<h2>隐私保护</h2>
 			<div class="protect_content">
 				<div class="content_pic">
-					<img src="../../assets/imgs/method_sxl_12.png">
+					<img src="src/assets/imgs/method_sxl_12.png">
 				</div>
 				<div class="content">
 					<p class="content_t">
@@ -54,20 +54,20 @@
 			</div>
 		</div>
 		<!-- 核心业务流程 -->
-		<div class="sxl_main_bg  wow slideInRight">		
+		<div class="sxl_main_bg ">		
 			<div class="sxl_main">
 				<h2>共识机制</h2>
 				<div class="main_content">
-					<img src="../../assets/imgs/method_sxl_15.png">
+					<img src="src/assets/imgs/method_sxl_15.png">
 				</div>
 			</div>
 		</div>
 		<!-- 平台概览 -->
-		<div class="sxl_overview wow slideInLeft">
+		<div class="sxl_overview">
 			<h2>平台概览</h2>
 			<p>在此输入信世链的描述，在此输入信世链的描述在此输入信世链的描述</p>
-			<div class="overview_content  wow slideInRight">
-				<img src="../../assets/imgs/method_sxl_19.png">
+			<div class="overview_content ">
+				<img src="src/assets/imgs/method_sxl_19.png">
 			</div>
 		</div>
 	</div>

@@ -5,8 +5,8 @@ var mysql = require("mysql");
 var sql = mysql.createConnection({
 	host:"localhost",
 	user:"root",
-	password:"",
-	database:"meixi"
+	password:"NO",
+	database:"lychee-test"
 });
 
 //连接数据库

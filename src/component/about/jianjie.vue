@@ -1,19 +1,19 @@
 <template>
 	<div>
-		<div class="jianjie_bg wow bounceInLeft">
+		<div class="jianjie_bg">
 			<div class="jianjie">
-				<p class = "wow">
+				<p>
 					广州立趣信息科技有限公司，成立于2014年，是一家正牌调整成长中的国家级高新科技企业，其核心成员来自于前微软、HP、ORACLE等国际知名IT公司的高管和优秀员工。
 					立趣信息科技是一家专业的大数据金融科技公司，专注于运营商供应链金融的风险识别、风险控制和风险定价，帮助传统金融机构打破行业壁垒，切入运营商供应链金融及消费金融，推动运营商行业和金融行业的深度整合发展。立趣信息科技综合运用了海量数据分析技术、数据交叉验证技术、机器学习及人工智能算法，研发了基于供应链真实交易数据的立趣信用平台，帮助供应链中的小微企业和个人将数据转化为信用，并且能够通过互联网的方式简单、快捷、高效的获取所需的金融服务。
 				</p>
 				<div class="certificate">
-					<img src="../../assets/imgs/jianjie_05.png">
+					<img src="src/assets/imgs/jianjie_05.png">
 				</div>
 			</div>
 		</div>
-		<div class="ly_event_bg wow bounceInRight">
+		<div class="ly_event_bg">
 			<div class="ly_event">
-				<h1 class = "wow bounceInLeft">立趣大事件</h1>
+				<h1>立趣大事件</h1>
 				<div class="event_container">
 					<ul class = "event_list">
 						<li class = "event_years">2018年</li>

@@ -20,20 +20,22 @@ import ElementUI from 'element-ui';
 import '../node_modules/element-ui/lib/theme-chalk/index.css';
 import './assets/font-awesome/css/font-awesome.css';
 
-//基于Element UI的全国地区三级联动；
-// import VueAreaLinkage from 'vue-area-linkage';
-// Vue.use(VueAreaLinkage);
-
 //VueAwesomeSwiper滑块插件；
 import VueAwesomeSwiper from 'vue-awesome-swiper';
-// require styles
-import 'swiper/dist/css/swiper.css';
+import 'swiper/dist/css/swiper.min.css';
+
 Vue.use(VueAwesomeSwiper);
+
+// import 'swiper/dist/css/swiper.css';
 
 // 轮播图，在入口文件中引入(暂时不支持单组件引入的方式):
 import wcSwiper from 'wc-swiper';
 import 'wc-swiper/style.css';
 Vue.use(wcSwiper);
+
+//滚动动画插件scrollreveal;
+import scrollReveal from 'scrollreveal';  //引入第三方插件，最后.js后缀可以不写
+Vue.prototype.$scrollreveal = scrollReveal;  //注册到Vue原型上，名字可以自己命名一个，;
 
 //图片懒加载； 
 import VueLazyload from 'vue-lazyload';
@@ -44,9 +46,13 @@ Vue.prototype.$ajax = axios;
 Vue.use(ElementUI);
 Vue.use(animate);
 
+//固定定位水平滚动。
+window.onscroll=function(){
+	var sl=-Math.max(document.body.scrollLeft,document.documentElement.scrollLeft);
+	document.getElementById('fixed').style.left=sl+'px';
+}
 //切换路由回到顶部；
 router.afterEach((to,from,next) => {
-	console.log(111111111111111111)
   	window.scrollTo(0,0);
 });
 

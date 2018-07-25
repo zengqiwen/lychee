@@ -1,13 +1,13 @@
 <template>
 	<div class="company">
 		<!-- 解决方案 -->
-		<div class="company_plan_bg wow slideInRight">		
+		<div class="company_plan_bg">		
 			<div class="company_plan">
 				<h2>解决方案</h2>
 				<div class="plan_content">
 					<el-card shadow="always">
 					    <div class="loanPlan">
-					    	<img src="../../assets/imgs/method_company_07.png">
+					    	<img src="src/assets/imgs/method_company_07.png">
 					    	<div>
 					    		<span></span>
 					    	</div>
@@ -19,7 +19,7 @@
 					</el-card>
 					<el-card shadow="always">
 					    <div class="loanPlan">
-					    	<img src="../../assets/imgs/method_company_10.png">
+					    	<img src="src/assets/imgs/method_company_10.png">
 					    	<div>
 					    		<span></span>
 					    	</div>
@@ -33,21 +33,21 @@
 			</div>
 		</div>
 		<!-- 服务覆盖 -->
-		<div class="company_map wow slideInLeft">
+		<div class="company_map">
 			<h2>让服务覆盖全国各地</h2>
 			<p>目前业务已在全国多个省内开展，业务覆盖 99% 的城市。</p>
-			<img src="../../assets/imgs/method_company_15.png">
+			<img src="src/assets/imgs/method_company_15.png">
 		</div>
 		<!-- 合作机构 -->
-		<div class="company_coop_bg  wow slideInRight">
+		<div class="company_coop_bg ">
 			<div class="company_coop">
 				<h2>合作金融机构<span></span></h2>
 				<div class="coops">
 					<div class="coops_item">
-						<img src="../../assets/imgs/coop-bok.png">
+						<img src="src/assets/imgs/coop-bok.png">
 					</div>
 					<div class="coops_item">
-						<img src="../../assets/imgs/coop-mingcheng.png">
+						<img src="src/assets/imgs/coop-mingcheng.png">
 					</div>
 					
 				</div>

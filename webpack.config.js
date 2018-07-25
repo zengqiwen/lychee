@@ -4,7 +4,9 @@ var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
-  entry: './src/main.js',  //唯一入口文件
+  entry: {
+    app: ["babel-polyfill", "./src/main.js"],  //唯一入口文件
+  },
   output: {
     path: path.resolve(__dirname, './dist'), //打包的 js 存放目录，也就是 npm build(webpack) 会生成一个 js 文件
     publicPath: '/dist/', //npm start 虚拟路径

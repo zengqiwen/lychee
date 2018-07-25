@@ -5,7 +5,7 @@
   "author": "",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot --host 192.168.2.105",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
@@ -23,6 +23,7 @@
     "axios": "^0.16.2",
     "babel-core": "^6.0.0",
     "babel-loader": "^6.0.0",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.5.1",
     "babel-preset-latest": "^6.0.0",
     "babel-preset-stage-2": "^6.24.1",
@@ -37,7 +38,9 @@
     "node-sass": "^4.5.0",
     "qs": "^6.5.1",
     "sass-loader": "^5.0.1",
+    "scrollreveal": "^3.4.0",
     "style-loader": "^0.16.1",
+    "swiper": "^4.3.3",
     "url-loader": "^0.5.8",
     "v-distpicker": "^1.0.12",
     "vue-area-linkage": "^3.0.0",
