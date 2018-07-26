@@ -1,5 +1,15 @@
 .index {
   width: 100%;
+  h2 {
+    font-size: 34px;
+    margin-bottom: 24px;
+  }
+  @media screen and (max-width: 768px) {
+     h2 {
+      font-size: 24px;
+      margin-bottom: 14px;
+    }
+  }
   .swiper-container {
     width: 100%;
     position: relative;
@@ -45,149 +55,113 @@
       img{
         width: 100%;
       }
-    }
-    // .el-carousel__container {
-    //   @media screen and (min-width:480px) {
-    //     height: 272px;
-    //     .el-carousel__item {
-    //       height: 100%;
-    //       position: absolute;
-    //       img {
-    //         display: block;
-    //         width: 100%;
-    //         height: 100%;
-    //       }
-    //       .btn_detail {
-    //         bottom: 20%;
-    //         background: #f4cf04;
-    //       }
-    //       .btn_more {
-    //         bottom: 30%;
-    //         color: #fff;
-    //         background: transparent;
-    //         border: 1px solid #b8c7e0;
-    //       }
-    //       button {
-    //         cursor: pointer;
-    //         outline: none;
-    //         border-radius: 5px;
-    //         position: absolute;
-    //         left: 0;
-    //         right: 0;
-    //         // bottom: 20%;
-    //         margin: auto;
-    //         width: 100px;
-    //         height: 30px;
-    //       }
-    //     }
-    //   }
-    //   @media screen and (min-width:768px){
-    //     height: 272px;
-    //     .el-carousel__item {
-    //       height: 100%;
-    //       position: absolute;
-    //       img {
-    //         display: block;
-    //         width: 100%;
-    //         height: 100%;
-    //       }
-    //       .btn_detail {
-    //         bottom: 20%;
-    //         background: #f4cf04;
-    //       }
-    //       .btn_more {
-    //         bottom: 30%;
-    //         color: #fff;
-    //         background: transparent;
-    //         border: 1px solid #b8c7e0;
-    //       }
-    //       button {
-    //         cursor: pointer;
-    //         outline: none;
-    //         border-radius: 5px;
-    //         position: absolute;
-    //         left: 0;
-    //         right: 0;
-    //         // bottom: 20%;
-    //         margin: auto;
-    //         width: 100px;
-    //         height: 30px;
-    //       }
-    //     }
-
-    //   }
-    //   @media screen and (min-width:992px){
-    //     height: 400px;
-    //     .el-carousel__item {
-    //       height: 100%;
-    //       position: absolute;
-    //       img {
-    //         display: block;
-    //         width: 100%;
-    //         height: 100%;
-    //       }
-    //       .btn_detail {
-    //         bottom: 20%;
-    //         background: #f4cf04;
-    //       }
-    //       .btn_more {
-    //         bottom: 30%;
-    //         color: #fff;
-    //         background: transparent;
-    //         border: 1px solid #b8c7e0;
-    //       }
-    //       button {
-    //         cursor: pointer;
-    //         outline: none;
-    //         border-radius: 5px;
-    //         position: absolute;
-    //         left: 0;
-    //         right: 0;
-    //         // bottom: 20%;
-    //         margin: auto;
-    //         width: 150px;
-    //         height: 45px;
-    //       }
-    //     }
-
-    //   }
-    //   @media screen and (min-width:1200px){
-    //     height: 540px;
-    //     .el-carousel__item {
-    //       height: 100%;
-    //       position: absolute;
-    //       img {
-    //         display: block;
-    //         width: 100%;
-    //         height: 100%;
-    //       }
-    //       .btn_detail {
-    //         bottom: 20%;
-    //         background: #f4cf04;
-    //       }
-    //       .btn_more {
-    //         bottom: 30%;
-    //         color: #fff;
-    //         background: transparent;
-    //         border: 1px solid #b8c7e0;
-    //       }
-    //       button {
-    //         cursor: pointer;
-    //         outline: none;
-    //         border-radius: 5px;
-    //         position: absolute;
-    //         left: 0;
-    //         right: 0;
-    //         // bottom: 20%;
-    //         margin: auto;
-    //         width: 200px;
-    //         height: 60px;
-    //       }
-    //     }
-    //   }
-    // }
-    
+    }    
   }
+  // 区块链
+  .index_qkl_bg {
+    width: 100%;
+    background: #f5f6f8;
+    .index_qkl {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-top: 80px;
+      min-height: 620px;
+      
+      p {
+        font-size: 26px;
+        line-height: 36px;
+        margin-bottom: 30px;
+      }
+      @media screen and (max-width: 768px) {
+        padding-top: 30px;
+        p {
+          font-size: 18px;
+          line-height: 26px;
+          margin-bottom: 15px;
+        }
+      }
+      .index_qkl_content {
+        overflow: hidden;
+        .content_l {
+          float: left;
+          width: 30%;
+          
+          .content_list {
+            padding-top: 10px;
+            li {
+              /* min-width: 250px;*/
+
+              font-size: 24px;
+              line-height: 62px;
+              color: #424242;
+              list-style: disc inside;
+            }
+          }
+          button {
+            outline: none;
+            cursor: pointer;
+            width: 132px;
+            height: 48px;
+            -moz-border-radius: 24px;
+                 border-radius: 24px;
+            color: #1fb9ff;
+            border: 2px solid #1fb9ff;
+            margin-top: 50px;
+            background: #fff;
+          }
+          @media screen and (max-width: 768px) {
+            clear: both;
+            width: 100%;
+            .content_list {
+              padding-top: 10px;
+              li {
+                font-size: 14px;
+                line-height: 32px;
+                color: #424242;
+                list-style: disc inside;
+              }
+            }
+            button {
+              display: block;
+              outline: none;
+              cursor: pointer;
+              width: 132px;
+              height: 48px;
+              -moz-border-radius: 24px;
+              margin: 10px auto;
+            }
+          }
+        }
+        .content_r {
+          float: left;
+          width: 70%;
+          @media screen and (max-width: 768px) {
+            clear: both;
+            width: 100%;
+          }
+          img {
+            display: block;
+            margin: 0 auto;
+          }
+          .content_desc {
+            margin-top: 30px;
+            list-style-type:none;
+            counter-reset:sectioncounter;
+            li {
+              font-size: 16px;
+              line-height: 28px;
+              color: #222;
+            }
+            li:before {
+              content:counter(sectioncounter) "、"; 
+              counter-increment:sectioncounter;
+            }
+          }
+        }
+      }
+    }
+  }
+  // 翼购平台
   .index_ygpt_bg {
     width: 100%;
     background: #f5f6f8;  
@@ -195,14 +169,12 @@
       max-width: 1200px;
       margin: 0 auto;
       overflow: hidden;
-      padding-top: 110px;
-      height: 590px;
+      padding-top: 5%;
+      .lf_content {
+        width: 40%;
+      }
       .lf_title {
         margin-bottom: 45px;
-        h2 {
-          font-size: 34px;
-          margin-bottom: 24px;
-        }
         h3 {
           font-size: 24px;
           margin-bottom: 15px;
@@ -228,20 +200,23 @@
         }
       }
       .rf_picture {
-        position: relative;
+        width: 60%;
+        padding-top: 5%;
         img {
           width: 80%;
           display: block;
-          position: absolute;
-          /* left: 0;*/
-          top: 0;
-          right: 0;
-          bottom: 0;
           margin: auto;
+        }
+      }
+      @media screen and (max-width:768px) {
+        padding-top: 20px;
+          .lf_content {
+          width: 100%;
         }
       }
     }
   }
+  // 翼企购
   .index_yqd {
     max-width: 1200px;
     margin: 0 auto;
@@ -262,10 +237,10 @@
     }
     .rf_title {
       margin-bottom: 45px;
-      h2 {
+      /* h2 {
         font-size: 34px;
         margin-bottom: 24px;
-      }
+      } */
       h3 {
         font-size: 24px;
         margin-bottom: 15px;
@@ -291,58 +266,61 @@
       }
     }
   }
-  .index_qkl_bg {
+  // 信用租机
+  .index_yqd_bg {
     width: 100%;
     background: #f5f6f8;
-    .index_qkl {
+    .index_yqd {
       max-width: 1200px;
       margin: 0 auto;
-      padding-top: 80px;
-      height: 620px;
-      h2 {
-        font-size: 35px;
-        line-height: 45px;
-      }
-      p {
-        font-size: 26px;
-        line-height: 36px;
-        margin-bottom: 30px;
-      }
-      .content_list {
-        padding-top: 10px;
-        li {
-          /* min-width: 250px;*/
-
-          font-size: 24px;
-          line-height: 62px;
-          color: #424242;
-          list-style: disc inside;
+      height: 500px;
+      padding-top: 150px;
+      .lf_picture {
+        position: relative;
+        img {
+          width: 80%;
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 0;
+          /* right: 0;*/
+          /* bottom: 0;*/
+          margin: auto;
         }
       }
-      button {
-        outline: none;
-        cursor: pointer;
-        width: 132px;
-        height: 48px;
-        -moz-border-radius: 24px;
-             border-radius: 24px;
-        color: #1fb9ff;
-        border: 2px solid #1fb9ff;
-        margin-top: 50px;
-        background: #fff;
-      }
-      img {
-        display: block;
-        margin: 0 auto;
-      }
-      .content_desc {
-        font-size: 16px;
-        line-height: 24px;
-        color: #888;
-        margin-top: 60px;
+      .rf_title {
+        margin-bottom: 45px;
+        /* h2 {
+          font-size: 34px;
+          margin-bottom: 24px;
+        } */
+        h3 {
+          font-size: 24px;
+          margin-bottom: 15px;
+        }
+        p {
+          font-size: 18px;
+          color: #888;
+        }
+        button {
+          outline: none;
+          cursor: pointer;
+          width: 132px;
+          height: 48px;
+          -moz-border-radius: 24px;
+               border-radius: 24px;
+          color: #1fb9ff;
+          border: 2px solid #1fb9ff;
+          margin-top: 50px;
+          background: #fff;
+        }
+        .el-button--primary {
+          color: #fff;
+        }
       }
     }
   }
+  
   .index_cooperate_bg {
     width: 100%;
     background: #f5f6f8;
@@ -350,7 +328,7 @@
       max-width: 1200px;
       margin: 0 auto;
       padding-bottom: 90px;
-      h2 {
+      h3 {
         display: inline-block;
         width: 100%;
         font-size: 22px;
@@ -366,8 +344,11 @@
           div {
             position: relative;
             background: #fff;
-            // min-width: 150px;
             height: 100%;
+            &:hover {
+              border: 1px solid #67b6ff;
+              cursor: pointer;
+            }
             img {
               display: block;
               position: absolute;
@@ -376,26 +357,8 @@
               right: 0;
               bottom: 0;
               margin: auto;
-              width: 150px;
-              height: 75px;
-            }
-            @media screen and (min-width:480px) {
-              img {
-                width: 150px;
-                height: 75px;
-              }
-            }
-            @media screen and (min-width:768px) {
-              img {
-                width: 150px;
-                height: 75px;
-              }
-            }
-            @media screen and (min-width:992px) {
-              img {
-                width: 200px;
-                height: 100px;
-              }
+              width: 200px;
+              height: 100px;
             }
           }
         }

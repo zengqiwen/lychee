@@ -2,18 +2,24 @@
 	width: 100%;
 	background: #f5f6f8;
 	padding-top: 60px;
+	@media screen and (max-width: 768px) {
+		padding-top: 20px;
+	}
 	.join {
 		max-width: 1200px;
 		margin: 0 auto;
-		min-width: 768px;
+
 		overflow: hidden;
+
 		.job_list {
 			.job_item {
 				padding: 18px 45px 25px 40px;
 				position: relative;
 				margin-bottom: 20px;
 				background: #fff;
-
+				@media screen and (max-width: 768px) {
+					padding: 10px;
+				}
 				h3 {
 					font-size: 21px;
 					line-height: 47px;
@@ -35,6 +41,9 @@
 					top: 90px;
 					font-size: 16px;
 					cursor: pointer;
+					@media screen and (max-width: 768px) {
+						top: 70px;
+					}
 					span {
 						display: block;
 						width: 100%;
@@ -44,11 +53,12 @@
 						top: 7px;
 						z-index: 999;
 					}
-					.el-icon-arrow-up {
+					i {
 						position: absolute;
 						right: 0;
 						top: 10px;
 					}
+
 				}
 				.job {
 					h4 {

@@ -34,12 +34,12 @@ import 'wc-swiper/style.css';
 Vue.use(wcSwiper);
 
 //滚动动画插件scrollreveal;
-import scrollReveal from 'scrollreveal';  //引入第三方插件，最后.js后缀可以不写
-Vue.prototype.$scrollreveal = scrollReveal;  //注册到Vue原型上，名字可以自己命名一个，;
+//import scrollReveal from 'scrollreveal';  //引入第三方插件，最后.js后缀可以不写
+//Vue.prototype.$scrollreveal = scrollReveal;  //注册到Vue原型上，名字可以自己命名一个，;
 
 //图片懒加载； 
-import VueLazyload from 'vue-lazyload';
-Vue.use(VueLazyload);
+// import VueLazyload from 'vue-lazyload';
+// Vue.use(VueLazyload);
 
 Vue.prototype.$ajax = axios;
 

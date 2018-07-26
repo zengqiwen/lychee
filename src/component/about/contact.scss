@@ -10,6 +10,10 @@
 		border-bottom: 2px solid #ebebeb;
 		position: relative;
 		margin-bottom: 40px;
+		@media screen and (max-width: 768px) {
+			font-size: 20px;
+			line-height: 48px;
+		}
 	}
 	h1:after {
 		content: '';
@@ -45,6 +49,7 @@
 		    justify-content: space-around;
 		padding: 70px 12.5% 35px 12.5%;
 		background: #f5f6f8;
+
 		.el-card {
 			width: 30%;
 			height: 260px;
@@ -60,14 +65,14 @@
 			h3 {
 				font-size: 16px;
 				text-align: center;
-				margin-top: 70px;
+				margin-top: 50px;
 			}
 			.contact_detail {
 				font-size: 16px;
 				line-height: 24px;
 				color: #777;
 				text-align: center;
-				margin-top: 30px;
+				margin-top: 20px;
 				height: 48px;
 			}
 			button {
@@ -83,12 +88,35 @@
 				margin-top: 8px;
 			}
 		}
+		@media screen and (max-width: 768px) {
+			display: block;
+			.el-card {
+				width: 100%;
+				margin-bottom: 60px;
+				&:nth-of-type(3){
+					margin-bottom: 0;
+				}
+			}
+		}
 	}
 	.contact_map {
 		img {
 			display: block;
 			width: 100%;
 			margin: 40px 0 110px 0 ;
+		}
+		.small_map {
+			display: none ;
+		}
+		@media screen and (max-width: 768px) {
+			img {
+				display: none;
+			}
+			.small_map {
+				display: block;
+				margin:0;
+
+			}
 		}
 	}
 }

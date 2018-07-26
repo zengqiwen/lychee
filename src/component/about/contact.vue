@@ -28,7 +28,8 @@
 			</el-card>
 		</div>
 		<div class="contact_map">
-			<img class = "wow slideInUp" src="src/assets/imgs/contact_15.png">
+			<img src="src/assets/imgs/contact_15.png">
+			<img src="src/assets/imgs/contact_15_s.png" class = "small_map">
 		</div>
 	</div>
 </template>

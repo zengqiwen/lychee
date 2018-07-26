@@ -47,22 +47,35 @@
 			<div class="loaning_bg">
 				<div class="loaning">
 					<h3>贷中监控</h3>
-					<div class="loaning_content">
-						<div class="lf" style = "width: 60%; ">
-							<img src="src/assets/imgs/personal_29.png">
-						</div>
-						<div class="rf" style = "width: 40%; ">
-							<p>
-								通过抓取个人用户借贷后的行为数据，借助在风险模型上的先进技术建立了针对于个人的贷中监控预警，可提前识别个人可能出现的风险，通过多种方式提醒金融公司，从而降低风险，减少损失。
-							</p>
-						</div>
+					<div class = "loaning_pic">
+						<img src="src/assets/imgs/personal_loaning.png" alt = "">
 					</div>
+					<ul class = "loaning_content">
+						<li class = "loaning_desc">
+							通过抓取供应企业借贷后的交易数据，借助在风险模型上的先进技术建立了针对企业的贷中监控预警，可提前识别企业可能出现的风险，通过多种方式提醒金融公司，从而降价风险，减少损失。
+						</li>
+						<li>
+							<ul class = "sub_content">
+								<li>
+									<h4>实时授信</h4>
+									<p>依托强大的算法模型能力，对用户进行全方位的信用评估，当信用评估分值达到一定水平后，可对其进行信用授信，并将信用分值转化为信贷额度。</p>
+								</li>
+								<li>
+									<h4>监控预警</h4>
+									<p>通过离网预警模型和失联修复模型识别有违约风险的用户，准确识别高危用户，并针对违约用户提供失联修复参考。</p>
+								</li>
+								<li>
+									<h4>征信上报</h4>
+									<p>已与人民银行征信中心展开深入合作，对授信人的履约情况，进行跟踪，定时定期进行上报，形成征信记录。</p>
+								</li>
+								<li>
+									<h4>全流程服务</h4>
+									<p>星图-金融风控大数据平台，具有完善的系统支撑能力，可提供业务预约、业务受理、业务校验审核，业务统计、结算对账、业务监控预警等服务。</p>
+								</li>
+							</ul>
+						</li>
+					</ul>
 				</div>
-				<!-- <div class="loaning">
-					<h3>贷中监控</h3>
-					<p>通过抓取供应企业借贷后的交易数据，借助在风险模型上的先进技术建立了针对企业的贷中监控预警，可提前识别企业可能出现的风险，通过多种方式提醒金融公司，从而降价风险，减少损失。</p>
-					
-				</div> -->
 			</div>
 			<!-- 贷后跟踪 -->
 			<div class="afterLoan">
@@ -89,23 +102,23 @@
 					<el-row :gutter="12" class = "loaning_list">
 						<el-col :span="8">
 						    <el-card shadow="always">
-						    	<img src="src/assets/imgs/company_30.png">
-									<h4>易集成</h4>
+						    	<div class = "creditIcon icon1"></div>
+						    	<h4>易集成</h4>
 								<span>不改变原有流程，增加立趣模块</span>
 						    </el-card>
 						</el-col>
 						<el-col :span="8">
 						    <el-card shadow="always">
-						    	<img src="src/assets/imgs/company_30.png">
-									<h4>易集成</h4>
-								<span>不改变原有流程，增加立趣模块</span>
+						    	<div class = "creditIcon icon2"></div>
+						    	<h4>修复触达方式</h4>
+								<span>触达客户是催收的最基本前提</span>
 						    </el-card>
 						</el-col>
 						<el-col :span="8">
 						    <el-card shadow="always">
-						    	<img src="src/assets/imgs/company_30.png">
-									<h4>易集成</h4>
-								<span>不改变原有流程，增加立趣模块</span>
+						    	<div class = "creditIcon icon3"></div>
+						    	<h4>丰富触达方式</h4>
+								<span>发现挖掘新的触达方式</span>
 						    </el-card>
 						</el-col>
 					</el-row>

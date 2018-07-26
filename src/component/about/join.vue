@@ -16,10 +16,12 @@
 			<ul class="job_list">
 				<li class = "job_item "  v-for = "(item, index) in 4" :key = "index" v-bind:class="{ slideInLeft : (index%2) == 0 , 'slideInRight': (index%2) != 0  }">
 					<h3 class = "job_name">高级Java软件工程师<span class = "job_date">发布时间：2017-10-01</span></h3>
-					<div class="openAndClose" >
-						<span class = "job_open" v-show = "index == 0?show : !show" @click = "openAndClose">展开</span>
-						<span class = "job_close" v-show = "index == 0?!show : show" @click = "openAndClose">折叠</span>
-						<i class="el-icon-arrow-up" ref = "rotate"></i>
+					<div class="openAndClose">
+						<span class = "job_open" v-show = "index == 0?show : !show"  @click = "openAndClose">展开</span>
+						<span class = "job_close" v-show = "index == 0?!show : show"  @click = "openAndClose">折叠</span>
+						<i class="el-icon-arrow-down" ref = "rotate" v-show = "index == 0?show : !show"></i>
+						<i class="el-icon-arrow-up" ref = "rotate" v-show = "index == 0?!show : show"></i>
+						<!-- <i class="el-icon-arrow-down" ref = "rotate"></i> -->
 					</div>
 					<el-collapse-transition>
 
@@ -81,15 +83,7 @@
 				$(e.target).siblings('span').toggle();
 				console.log($(e.target).parents('.job_item').find('.job'));
 				$(e.target).parents('.job_item').find('.job').toggle();
-				if(this.show){
-					this.r += 180;
-					$(this.$refs.rotate).css('transform', 'rotate('+ this.r +'deg)');
-				} else {
-					this.r -= 180;
-					$(this.$refs.rotate).css('transform', 'rotate('+ this.r +'deg)');
-				}
-				
-
+				$(e.target).siblings('i').toggle();
 			}
 		},
 		created: function(){

@@ -15,10 +15,63 @@
 			</swiper-slide>
 			<div class="swiper-pagination" slot="pagination"></div>
 		</swiper>
+		
+		<!-- 区块链 -->
+		<div class="index_qkl_bg">
+			<div class="index_qkl">
+				<h2>重磅推出基于区块链的供应链金融平台</h2>
+				<p>让企业融资更简单一些</p>
+				<div class="index_qkl_content">
+					<div class="content_l">
+						<ul class = "content_list">
+							<li>分布式监管</li>
+							<li>背书身份认证</li>
+							<li>隐私保护</li>
+							<li>智能撮合</li>
+							<li>数据存证</li>
+						</ul>
+						<button>了解更多 ></button>
+					</div>
+					<div class="content_r">
+						<img src="src/assets/imgs/index_finance.png">
+						<ul class = "content_desc">
+							<li>融资企业申请融资额度，同时进行供应链上下游经营数据的授权，由核心企业进行背书确认</li>
+							<li>立趣基于大数据以及人工智能算法就融资企业进行风险的识别以及授信额度的建议。</li>
+							<li>金融机构基于立趣的授信建议进行确认和放款。</li>
+							<li>贷款记录相关信息写入区块链，可作为存证，用于日后的违约纠纷处理。</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- 翼企贷 -->
+		<div class="index_yqd">
+			<div class="lf lf_picture" style = "width: 60%; height: 100%;">
+				<img src="src/assets/imgs/index_yqd.png">
+			</div>
+			<div class="rf" style = "width: 40%; height: 100%">
+				<div class="rf_title">
+					<h2>翼企贷</h2>
+					<p>PLATFORM INTRODUTION</p>
+				</div>
+				<div class="rf_title">
+					<h3>数据流就是现金流</h3>
+					<p>	
+						帮助企业将数据转化为资产提供简单快捷的线上融资平台实时对接多元化的金融机构提升供应链市场竞争力和规模
+					</p>
+				</div>
+				
+				<div class="rf_title">
+					<button>前往商城 ></button>
+				</div>
+
+			</div>
+		</div>
 		<!-- 翼购平台 -->
-		<div class = "index_ygpt_bg">
+		<!-- <div class = "index_ygpt_bg">
 			<div class="index_ygpt">
-				<div class="lf" style = "width: 30%; height: 100%">
+				<div class="lf lf_content">
 					<div class="lf_title">
 						<h2>翼购平台</h2>
 						<p>PLATFORM INTRODUTION</p>
@@ -37,92 +90,46 @@
 
 					<div class="lf_title">
 						<button>了解更多 ></button>
-						<!-- <el-button type="primary">了解更多 ></el-button> -->
-					</div>
-
-					
+					</div>	
 				</div>
-				<div class="rf rf_picture" style = "width: 70%; height: 100%;">
+				<div class="rf rf_picture">
 					<img src="src/assets/imgs/index_ygpt.png">
 				</div>
 			</div>
-		</div>
+		</div> -->
 		
-		<!-- 翼企贷 -->
-		<div class="index_yqd">
-			<div class="lf lf_picture" style = "width: 60%; height: 100%;">
-				<img src="src/assets/imgs/index_yqd.png">
-			</div>
-			<div class="rf" style = "width: 40%; height: 100%">
-				<div class="rf_title">
-					<h2>翼企贷</h2>
-					<p>PLATFORM INTRODUTION</p>
-				</div>
-				<div class="rf_title">
-					<h3>输入标题</h3>
-					<p>输入描述性文字</p>
-				</div>
-				
-				<div class="rf_title">
-					<button>前往商城 ></button>
-				</div>
-
-			</div>
-		</div>
-
-		<!-- 区块链 -->
-		<div class="index_qkl_bg">
-			<div class="index_qkl">
-				<h2>重磅推出区块链金融系统，打造区块链平台</h2>
-				<p>让区块链融资更简单一些</p>
-				<div class="index_qkl_content">
-					<div class="lf" style = "width: 40%; height: 100%;">
-						<ul class = "content_list">
-							<li>输入供应链金融特点</li>
-							<li>输入供应链金融特点</li>
-							<li>输入供应链金融特点</li>
-							<li>输入供应链金融特点</li>
-							<li>输入供应链金融特点</li>
-						</ul>
-						<button>了解更多 ></button>
-					</div>
-					<div class="rf" style = "width: 60%; height: 100%;">
-						<img src="src/assets/imgs/index_finance.png">
-						<p class = "content_desc">在此输入供应链平台的描述特点在此输入供应链平台的描述特点在此输入供应链平台的描述特点在此输入供应链平台的描述特点在此输入供应链平台的描述特点在此输入供应链平台的描述特点</p>
-					</div>
-				</div>
-			</div>
-
-		</div>
 		<!-- 信用租机 -->
-		<div class="index_yqd">
-			<div class="lf lf_picture" style = "width: 60%; height: 100%;">
-				<img src="src/assets/imgs/index_xyzj.png">
-			</div>
-			<div class="rf" style = "width: 40%; height: 100%">
-				<div class="rf_title">
-					<h2>信用租机</h2>
-					<p>PLATFORM INTRODUTION</p>
+		<div class="index_yqd_bg">
+			
+			<div class="index_yqd">
+				<div class="lf lf_picture" style = "width: 60%; height: 100%;">
+					<img src="src/assets/imgs/index_xyzj.png">
 				</div>
-				<div class="rf_title">
-					<h3>特点一</h3>
-					<p>输入描述性文字</p>
+				<div class="rf" style = "width: 40%; height: 100%">
+					<div class="rf_title">
+						<h2>信用租机</h2>
+						<p>PLATFORM INTRODUTION</p>
+					</div>
+					<div class="rf_title">
+						<h3>你守信，我买单</h3>
+						<p>引领分期消费潮流，将实惠给到用户。</p>
+					</div>
+					<div class="rf_title">
+						<h3>0元拿机</h3>
+						<p>根据信用等级，支持0首付。</p>
+					</div>
+					<div class="rf_title">
+						<h3>按月付费</h3>
+						<p>0负担年年换新机。</p>
+					</div>				
 				</div>
-				<div class="rf_title">
-					<h3>特点二</h3>
-					<p>输入描述性文字</p>
-				</div>
-				<div class="rf_title">
-					<h3>特点三</h3>
-					<p>输入描述性文字</p>
-				</div>				
 			</div>
 		</div>
 
 		<!-- 合作伙伴" -->
 		<div class="index_cooperate_bg">
 			<div class="index_cooperate">
-				<h2>合作伙伴</h2>
+				<h3>合作伙伴</h3>
 
 				<el-row class = "cooperate_list" :gutter="20">
 				  <el-col :span="6"><div><img src="src/assets/imgs/coop-telecom.png"></div></el-col>
@@ -152,8 +159,8 @@
 				items: [
 					'src/assets/imgs/banner1.jpg',
 					'src/assets/imgs/banner2.jpg',
-					'src/assets/imgs/banner3.jpg',
-					'src/assets/imgs/banner4.jpg'
+					// 'src/assets/imgs/banner3.jpg',
+					// 'src/assets/imgs/banner4.jpg'
 				],
 				swiperOption: {
 					pagination: {

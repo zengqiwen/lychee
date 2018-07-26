@@ -12,12 +12,21 @@ li{
 a{
 	text-decoration: none;
 }
+@media screen and (max-width:768px) {
+	.lf {
+		clear: both;
+	}
+	.rf {
+		clear: both;
+	}
+}
 .lf {
 	float: left;
 }
 .rf {
 	float: right;
 }
+
 .mx-home{
 
 	overflow: auto;

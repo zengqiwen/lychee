@@ -41,17 +41,17 @@
 				<p>通过抓取供应企业借贷后的交易数据，借助在风险模型上的先进技术建立了针对企业的贷中监控预警，可提前识别企业可能出现的风险，通过多种方式提醒金融公司，从而降价风险，减少损失。</p>
 				<ul class = "loaning_list">
 					<li>
-						<img src="src/assets/imgs/company_30.png">
+						<div class = "creditIcon icon1"></div>
 						<h4>易集成</h4>
 						<span>不改变自有的风险预警流程，增加立趣异动预警流程，包括监测流程和预警结果获取步骤。</span>
 					</li>
 					<li>
-						<img src="src/assets/imgs/company_24.png">
+						<div class = "creditIcon icon2"></div>
 						<h4>遵守全面性原则</h4>
 						<span>立趣引入互联网预警、通信自动行为预警等信号，与金融机构自有的预警信号互相补充，扩展风险预警的全面性。</span>
 					</li>
 					<li>
-						<img src="src/assets/imgs/company_27.png">
+						<div class = "creditIcon icon3"></div>
 						<h4>遵守及时性原则</h4>
 						<span>基于互联网大数据更新高频率，立趣引入准实时的异动预警，使金融机构的预警及时性得到跨越性的提高。</span>
 					</li>

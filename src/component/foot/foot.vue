@@ -4,7 +4,7 @@
 			<div class="foot-left">
 				<img src="src/assets/imgs/logo_ly.png">
 			</div>
-			<div class="ewm" v-if = "onresize">
+			<div class="ewm">
 				<img src="src/assets/imgs/index_ewm.png">
 				<p>官网微信</p>
 			</div>
@@ -31,7 +31,6 @@
 				<ul class = "foot-list">
 					<li class = "foot-list-title">官网微信</li>
 					<li><img src="src/assets/imgs/index_ewm.png"></li>
-					
 				</ul>
 			</div>
 		</div>

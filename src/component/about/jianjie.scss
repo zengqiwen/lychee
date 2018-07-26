@@ -4,19 +4,25 @@
 	.jianjie {
 		max-width: 1200px;
 		margin: 0 auto;
-		padding-top: 50px;
-		padding-bottom: 110px;
+		padding:50px 0;
 		p{
 			font-size: 16px;
 			line-height: 28px;
 		}
-		.certificate {
+		@media screen and (max-width: 768px) {
+			padding: 20px 0;
+			p {
+				padding: 0 10px;
+				text-indent: 10%;
+			}
+		}
+		/* .certificate {
 			text-align: center;
 			margin-top: 34px;
 			img {
 				width: 80%;
 			}
-		}
+		} */
 	}
 }
 .ly_event_bg {
@@ -28,6 +34,10 @@
 		padding-top: 40px;
 		padding-bottom: 100px;
 		position: relative;
+		@media screen and (max-width: 768px) {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
 		h1 {
 			text-align: center;
 			color: #0579cb;
@@ -71,6 +81,10 @@
 				left: 20%;
 				font-size: 22px;
 				color: #0579cb;
+				@media screen and (max-width: 768px) {
+					left: 0;
+					text-indent: 10%;
+				}
 			}
 			li {
 				text-align: center;
