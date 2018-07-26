@@ -72,12 +72,12 @@
 			<div class="application">
 				<h3>应用案例</h3>
 				<div class="application_item">
-					<div class="lf" style = "width: 45%;">
+					<div class="application_desc">
 						<h5>区块链供应链金融——产业链价值连接者</h5>
 						<p>在此输入供应链区块链金融的相关描述，在此输入供应链区块链金融的相关描述，在此输入供应链区块链金融的相关描述，在此输入供应链区块链金融的相关描述，在此输入供应链区块链金融的相关描述，在此输入供应链区块链金融的相关描述，在此输入供应链区块链金融的相关描述，在此输入供应链区块链金融的相关描述，</p>
 						<button>在线申请 ></button>
 					</div>
-					<div class="rf application_pic" style = "width: 55%;">
+					<div class="application_pic">
 						<img src="src/assets/imgs/company_40.png">
 					</div>
 				</div>

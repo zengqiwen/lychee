@@ -1,5 +1,5 @@
 <template>
-	<div class="mx-home">
+	<div class="mx-home" ref = "wrapper">
 		<div class="mx-header" id = "fixed">
 			<el-row class = "header_bg">
 				<el-col :span = "8" class = "logo">
@@ -37,6 +37,9 @@
 			</el-row>
 		</div>
 		<router-view class="section"></router-view>
+		<div class = "toTop" @click = "toTop" v-if = "up">
+			<img src="src/assets/imgs/toTop.png" alt = "">
+		</div>
 		<Foot></Foot>
 	</div>
 </template>
@@ -65,7 +68,8 @@
 			return {
 				show: false,
 				navIcon: false,
-				screenWidth: window.innerWidth
+				screenWidth: window.innerWidth,
+				up: false
 			}
 		},
 		components: {
@@ -109,14 +113,28 @@
 			},
 			toPath: function(e){
 				console.log(1,e.target.dataset.path);
+			},
+			toTop: function(e){
+				
+				$('body').animate({scrollTop: 0});
+			},
+			menu: function() {
+			    this.scroll = document.body.scrollTop;
+			    console.log(this.scroll);
+			    if(this.scroll > 500) {
+			    	this.up = true;
+			    } else {
+			    	this.up = false;
+			    }
 			}
 		},
 		created: function(){
 			
 		},
 		mounted: function(){
-			console.log( window.document.body.offsetWidth, window.screen.availWidth, window.innerWidth)
-			
+			window.addEventListener('scroll', this.menu);
+
+			// console.log( window.document.body.offsetWidth, window.screen.availWidth, window.innerWidth)		
 			const that = this;
 	        window.onresize = () => {
 	        	if(window.innerWidth <= 768) {
@@ -131,7 +149,7 @@
 	                window.screenWidth = window.innerWidth
 	                that.screenWidth = window.screenWidth
 	            })()
-	        }
+	        };
 		}
 
 	}

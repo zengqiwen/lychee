@@ -6,16 +6,15 @@
 			<!-- 贷前评分 -->
 			<div class="beforeLoan">
 				<div class="personal_content">
-					<div class="lf" style = "width: 50%;">
+					<div class="content_desc">
 						<h3>贷前信用评分</h3>
 						<p>立趣个人信用分是在用户授权的情况下，依据用户在运营商上的种类消费及行为数据，结合其他行业的数据源，运用云计算鳄鱼机器学习等技术，通过逻辑回归、决策树、随机森林等模型算法，对各维度数据进行综合处理和评估，在客户身份属性、消费行为、稳定性、终端、朋友圈、号码自然属性这六个维度客观呈现个人信用头部的综合分值。</p>
 						<p>立趣个人信用分的分值范围为 300 至 1000，分值越高代表信用超好，相应违约率相对较低，较高的立趣个人信用分可以帮助用户获得更高效、更优质的服务。</p>
 					</div>
-					<div class="rf score" style = "width: 50%; text-align: center;">
+					<div class="score">
 						<img src="src/assets/imgs/personal_05.png">
 					</div>
 				</div>
-				
 				<ul class = "loan_list">
 					<li>
 						<img src="src/assets/imgs/personal_12.png">
@@ -99,7 +98,7 @@
 							<span>发现挖掘新的触达方式</span>
 						</li>
 					</ul> -->
-					<el-row :gutter="12" class = "loaning_list">
+					<el-row :gutter="12" class = "loaned_list">
 						<el-col :span="8">
 						    <el-card shadow="always">
 						    	<div class = "creditIcon icon1"></div>
@@ -129,12 +128,12 @@
 				<div class="application">
 					<h3>应用案例</h3>
 					<div class="application_item">
-						<div class="lf" style = "width: 45%;">
+						<div class="application_desc">
 							<h5>区块链供应链金融——产业链价值连接者</h5>
 							<p>在此输入供应链区块链金融的相关描述，在此输入供应链区块链金融的相关描述，在此输入供应链区块链金融的相关描述，在此输入供应链区块链金融的相关描述，在此输入供应链区块链金融的相关描述，在此输入供应链区块链金融的相关描述，在此输入供应链区块链金融的相关描述，在此输入供应链区块链金融的相关描述，</p>
 							<button>在线申请 ></button>
 						</div>
-						<div class="rf application_pic" style = "width: 55%;">
+						<div class="application_pic">
 							<img src="src/assets/imgs/personal_33.png">
 						</div>
 					</div>
