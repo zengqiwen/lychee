@@ -1,11 +1,11 @@
 {
-  "name": "meixiapp",
+  "name": "lychee",
   "description": "A Vue.js project",
   "version": "1.0.0",
   "author": "",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot --host 192.168.1.101",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot --host 192.168.3.108",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
@@ -24,6 +24,7 @@
     "axios": "^0.16.2",
     "babel-core": "^6.0.0",
     "babel-loader": "^6.0.0",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.5.1",
     "babel-preset-latest": "^6.0.0",
     "babel-preset-stage-2": "^6.24.1",

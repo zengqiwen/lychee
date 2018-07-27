@@ -115,13 +115,13 @@
 				console.log(1,e.target.dataset.path);
 			},
 			toTop: function(e){
-				
-				$('body').animate({scrollTop: 0});
+				document.documentElement.animate({scrollTop: 0});
 			},
 			menu: function() {
-			    this.scroll = document.body.scrollTop;
-			    console.log(this.scroll);
-			    if(this.scroll > 500) {
+				console.log(document.documentElement.scrollTop , 22,window.pageYOffset , 3,document.body.scrollTop)
+				this.scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;  
+			    // console.log(scrollTop);
+			    if(this.scrollTop > 500) {
 			    	this.up = true;
 			    } else {
 			    	this.up = false;

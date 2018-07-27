@@ -2,7 +2,9 @@
 var webpack = require('webpack')
 
 module.exports = {
-  entry: './src/main.js',  //唯一入口文件
+  entry: {
+    app: ["babel-polyfill", "./src/main.js"] //唯一入口文件
+  }, 
   output: {
     path: path.resolve(__dirname, './dist'), //打包的 js 存放目录，也就是 npm build(webpack) 会生成一个 js 文件
     publicPath: '/dist/', //npm start 虚拟路径
@@ -93,28 +95,6 @@ module.exports = {
   // 需要把 config/index.js里的devtool: '#eval-source-map'改为devtool:'inline-source-map'，就可以访问到了。
   devtool: 'inline-source-map'
 }
-
-if (process.env.NODE_ENV === 'production') {
-  module.exports.devtool = '#source-map'
-  // http://vue-loader.vuejs.org/en/workflow/production.html
-  module.exports.plugins = (module.exports.plugins || []).concat([
-    new webpack.DefinePlugin({
-      'process.env': {
-        NODE_ENV: '"production"'
-      }
-    }),
-    new webpack.optimize.UglifyJsPlugin({
-      sourceMap: true,
-      compress: {
-        warnings: false
-      }
-    }),
-    new webpack.LoaderOptionsPlugin({
-      minimize: true
-    })
-  ])
-}
-
 
 if (process.env.NODE_ENV === 'production') {
   module.exports.devtool = '#source-map'
