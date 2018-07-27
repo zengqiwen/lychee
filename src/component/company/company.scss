@@ -25,10 +25,10 @@
 		}
 		@media screen and (max-width: 768px) {
 			padding-top: 0;
-			h3 {
-				font-size: 24px;
-				line-height: 60px;
-			}
+			// h3 {
+			// 	font-size: 24px;
+			// 	line-height: 60px;
+			// }
 			p {
 				
 				padding: 0 10px;
@@ -190,6 +190,7 @@
 			width: 100%;
 			img {
 				display: block;
+				width: 100%;
 				margin: 0 auto;
 				margin-top: 75px;
 			}
@@ -200,7 +201,7 @@
 		background: #f5f6f8;
 		.application {
 			max-width: 1200px;
-			max-height: 580px;
+			// max-height: 580px;
 			padding-bottom: 80px;
 			margin: 0 auto;
 			h3 {
@@ -213,33 +214,67 @@
 				margin-top: 48px;
 				font-size: 16px;
 				color: #666;
-				h5 {
-					font-size: 16px;
-					line-height: 42px;
-					margin-bottom: 17px;
-				}
-				p {
-					line-height: 24px;
-				}
-				button {
-					outline: none;
-					cursor: pointer;
-					width: 132px;
-					height: 48px;
-					-moz-border-radius: 24px;
-					     border-radius: 24px;
-					color: #1fb9ff;
-					border: 2px solid #1fb9ff;
-					margin-top: 50px;
-					background: #fff;
-				}
-				.application_pic {
-					overflow: hidden;
-					img {
-						float: right;
+				.application_desc {
+					float: left;
+					width: 45%;
+					h5 {
+						font-size: 16px;
+						line-height: 42px;
+						margin-bottom: 17px;
+					}
+					p {
+						line-height: 24px;
+						padding: 10px;
+					}
+					button {
+						outline: none;
+						cursor: pointer;
+						width: 132px;
+						height: 48px;
+						-moz-border-radius: 24px;
+						     border-radius: 24px;
+						color: #1fb9ff;
+						border: 2px solid #1fb9ff;
+						margin-top: 50px;
+						background: #fff;
 					}
 				}
-				
+				.application_pic {
+					float: left;
+					width: 55%;
+					overflow: hidden;
+					text-align: center;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				padding-bottom: 20px;
+				.application_item {
+					margin-top: 10px;
+					.application_desc {
+						clear: both;
+						width: 100%;
+
+						h5 {
+							text-indent: 10px;
+							margin-bottom: 0;
+						}
+						button {
+							display: block;
+							margin: 0 auto;
+							margin-top: 0;
+						}
+					}
+					.application_pic {
+						margin-top: 20px;
+						clear: both;
+						width: 100%;
+						text-align: center;
+						img {
+							width: 90%;
+
+						}
+					}
+				}
 			}
 		}
 	}

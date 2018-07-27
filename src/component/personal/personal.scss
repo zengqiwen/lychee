@@ -4,7 +4,6 @@
 		width: 100%;
 		img {
 			width: 100%;
-			/* min-width: 768px;*/
 		}
 	}
 	.beforeLoan {
@@ -14,7 +13,10 @@
 		.personal_content {
 			overflow: hidden;
 			height: 400px;
-
+			.content_desc {
+				float: left;
+				width: 50%;
+			}
 			h3 {
 				font-size: 33px;
 				line-height: 97px;
@@ -31,6 +33,9 @@
 			}
 			.score {
 				height: 100%;
+				width: 50%;
+				float: left;
+				text-align: center;
 				position: relative;
 				img {
 					position: absolute;
@@ -70,6 +75,38 @@
 				color: #696969;
 				margin-top: 10px;
 				font-size: 17px;
+			}
+		}
+		@media screen and (max-width: 768px) {
+			padding-top: 0;
+			.personal_content {
+				height: auto;
+				.content_desc {
+					clear: both;
+					width: 100%;
+					p {
+						padding: 0 10px;
+					}
+				}
+				.score {
+					clear: both;
+					width: 100%;
+					height: 300px;
+					img {
+						height: 80%;
+					}
+				}
+			}
+			.loan_list {
+				margin-top: 20px;
+				margin-bottom: 20px;
+
+				padding: 0 10px;
+				li {
+					width: 30%;
+					margin-bottom: 20px;
+					text-align: center;
+				}
 			}
 		}
 	}
@@ -147,8 +184,32 @@
 							width: 90%;
 							font-size: 14px;
 							line-height:50px;
+							
+						}
+						@media screen and (max-width: 768px) {
+							h4 {
+								width: 20%;
+							}
+							p {
+								width: 80%;
+								padding: 10px;
+								line-height: 24px;
+							}
 						}
 					}
+				}
+			}
+			@media screen and (max-width: 768px) {
+				padding-bottom: 20px;
+				.loaning_pic {
+					padding-bottom: 20px;
+					img {
+						width: 100%;
+					}
+				}
+				.loaning_content {
+					border-left: none;
+					border-right: none;
 				}
 			}
 		}
@@ -168,12 +229,15 @@
 			line-height: 25px;
 			color: #696969;
 			text-align: center;
+			padding: 0 10px;
 		}
-		.loaning_list {
+		.loaned_list {
 			margin-top: 95px;
 			padding-bottom: 115px;
+			margin-left: 0!important;
+			margin-right: 0!important;
 			.el-card {
-				max-width: 300px;
+				width: 300px;
 				/* padding-top: 40px; */
 				height: 300px;
 				background: #fff;
@@ -203,6 +267,20 @@
 					margin: 0 auto;
 				}
 			}
+			@media screen and (max-width: 768px) {
+				margin-top: 20px;
+				padding-bottom: 20px;
+				.el-col {
+					clear: both;
+					width: 100%;
+					padding: 0!important;
+					box-sizing: border-content;
+					.el-card {
+						margin: 0 auto;
+						margin-bottom: 20px;
+					}
+				}
+			}
 		}
 	}
 	.application_bg {
@@ -210,7 +288,6 @@
 		background: #f5f6f8;
 		.application {
 			max-width: 1200px;
-			max-height: 580px;
 			padding-bottom: 80px;
 			margin: 0 auto;
 			h3 {
@@ -223,32 +300,63 @@
 				margin-top: 48px;
 				font-size: 16px;
 				color: #666;
-				h5 {
-					font-size: 16px;
-					line-height: 42px;
-					margin-bottom: 17px;
-				}
-				p {
-					line-height: 24px;
-				}
-				button {
-					width: 132px;
-					height: 48px;
-					outline: none;
-					-moz-border-radius: 24px;
-					     border-radius: 24px;
-					color: #1fb9ff;
-					border: 2px solid #1fb9ff;
-					margin-top: 50px;
-					background: #fff;
+				.application_desc {
+					float: left;
+					width: 45%;
+					h5 {
+						font-size: 16px;
+						line-height: 42px;
+						margin-bottom: 17px;
+					}
+					p {
+						line-height: 24px;
+					}
+					button {
+						width: 132px;
+						height: 48px;
+						outline: none;
+						-moz-border-radius: 24px;
+						     border-radius: 24px;
+						color: #1fb9ff;
+						border: 2px solid #1fb9ff;
+						margin-top: 50px;
+						background: #fff;
+					}
 				}
 				.application_pic {
 					overflow: hidden;
-					img {
-						float: right;
+					float: left;
+					width: 55%;
+					text-align: center;
+				}	
+			}
+			@media screen and (max-width: 768px) {
+				padding-bottom: 20px;
+				.application_item {
+					margin-top: 20px;
+					.application_desc {
+						clear: both;
+						width: 100%;
+						padding: 10px;
+						box-sizing: border-box;
+						button {
+							
+							display: block;
+							margin: 0 auto;
+							margin-top: 20px;
+							margin-bottom: 20px;
+						}
 					}
+					.application_pic {
+						clear: both;
+						width: 100%;
+						margin-bottom: 20px;
+						img {
+							width: 80%;
+						}
+					}
+
 				}
-				
 			}
 		}
 	}
