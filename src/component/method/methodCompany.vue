@@ -56,7 +56,7 @@
 	</div>
 </template>
 <script>
-	import './company.scss';
+	import './methodCompany.scss';
 
 	export default {
 		data: function(){

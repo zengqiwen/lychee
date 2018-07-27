@@ -5,10 +5,6 @@ import {Notification} from 'element-ui';
 const state = {
 
 	show: false,
-	currentId: null,
-	product: [],
-	username: '',
-	idx: '',
 	active: '0',
 	activeName: 'first',
 	onresize: false

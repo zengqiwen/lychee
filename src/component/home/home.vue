@@ -69,6 +69,7 @@
 				show: false,
 				navIcon: false,
 				screenWidth: window.innerWidth,
+				// scrollTop: 0,
 				up: false
 			}
 		},
@@ -115,12 +116,12 @@
 				console.log(1,e.target.dataset.path);
 			},
 			toTop: function(e){
-				document.documentElement.animate({scrollTop: 0});
+				console.log(this.scrollTop);
+				$('html, body').animate({scrollTop:0}, 400);
+            	// document.documentElement.scrollTop = 0
 			},
 			menu: function() {
-				console.log(document.documentElement.scrollTop , 22,window.pageYOffset , 3,document.body.scrollTop)
-				this.scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;  
-			    // console.log(scrollTop);
+			    this.scrollTop =  document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
 			    if(this.scrollTop > 500) {
 			    	this.up = true;
 			    } else {
@@ -143,8 +144,6 @@
 	        		that.$store.state.home.onresize = false;
 
 	        	}
-			console.log(window.innerWidth)
-
 	            return (() => {
 	                window.screenWidth = window.innerWidth
 	                that.screenWidth = window.screenWidth

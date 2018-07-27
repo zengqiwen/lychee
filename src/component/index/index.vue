@@ -15,7 +15,6 @@
 			</swiper-slide>
 			<div class="swiper-pagination" slot="pagination"></div>
 		</swiper>
-		
 		<!-- 区块链 -->
 		<div class="index_qkl_bg">
 			<div class="index_qkl">
@@ -47,10 +46,8 @@
 		</div>
 		<!-- 翼企贷 -->
 		<div class="index_yqd">
-			<div class="lf lf_picture" style = "width: 60%; height: 100%;">
-				<img src="src/assets/imgs/index_yqd.png">
-			</div>
-			<div class="rf" style = "width: 40%; height: 100%">
+			
+			<div class="rf_desc">
 				<div class="rf_title">
 					<h2>翼企贷</h2>
 					<p>PLATFORM INTRODUTION</p>
@@ -66,6 +63,9 @@
 					<button>前往商城 ></button>
 				</div>
 
+			</div>
+			<div class="lf_picture">
+				<img src="src/assets/imgs/index_yqd.png">
 			</div>
 		</div>
 		<!-- 翼购平台 -->
@@ -99,13 +99,12 @@
 		</div> -->
 		
 		<!-- 信用租机 -->
-		<div class="index_yqd_bg">
-			
-			<div class="index_yqd">
-				<div class="lf lf_picture" style = "width: 60%; height: 100%;">
+		<div class="index_xyzj_bg">
+			<div class="index_xyzj">
+				<div class="lf_picture">
 					<img src="src/assets/imgs/index_xyzj.png">
 				</div>
-				<div class="rf" style = "width: 40%; height: 100%">
+				<div class="rf_desc">
 					<div class="rf_title">
 						<h2>信用租机</h2>
 						<p>PLATFORM INTRODUTION</p>
@@ -131,7 +130,7 @@
 			<div class="index_cooperate">
 				<h3>合作伙伴</h3>
 
-				<el-row class = "cooperate_list" :gutter="20">
+			<!-- 	<el-row class = "cooperate_list" :gutter="20">
 				  <el-col :span="6"><div><img src="src/assets/imgs/coop-telecom.png"></div></el-col>
 				  <el-col :span="6"><div><img src="src/assets/imgs/coop-bok.png"></div></el-col>
 				  <el-col :span="6"><div><img src="src/assets/imgs/coop-jingdong.png"></div></el-col>
@@ -142,7 +141,17 @@
 				  <el-col :span="6"><div><img src="src/assets/imgs/coop-xiaonuo.png"></div></el-col>
 				  <el-col :span="6"><div><img src="src/assets/imgs/coop-ecloud.png"></div></el-col>
 				  <el-col :span="6"><div><img src="src/assets/imgs/coop-mingcheng.png"></div></el-col>
-				</el-row>
+				</el-row> -->
+				<ul class = "cooperate_list">
+					  <li><img src="src/assets/imgs/coop-telecom.png"></li>
+					  <li><img src="src/assets/imgs/coop-bok.png"></li>
+					  <li><img src="src/assets/imgs/coop-jingdong.png"></li>
+					  <li><img src="src/assets/imgs/coop-haier.png"></li>
+					  <li><img src="src/assets/imgs/coop-wuxi.png"></li>
+					  <li><img src="src/assets/imgs/coop-xiaonuo.png"></li>
+					  <li><img src="src/assets/imgs/coop-ecloud.png"></li>
+					  <li><img src="src/assets/imgs/coop-mingcheng.png"></li>
+				</ul>
 
 			</div>
 		</div>
@@ -167,7 +176,7 @@
 				      	el: ".swiper-pagination",
 				      	clickable: true
 				    },
-					autoplay: 2500,
+					autoplay: true,
 					loop: true,
 					coverflow: {
 					　　rotate: 30,

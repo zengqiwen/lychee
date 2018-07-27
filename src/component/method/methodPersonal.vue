@@ -67,7 +67,7 @@
 	</div>
 </template>
 <script>
-	import './personal.scss';
+	import './methodPersonal.scss';
 
 	export default {
 		data: function(){
@@ -84,7 +84,7 @@
 		created: function(){
 		},
 		mounted: function(){
-
+			
 		}
 
 	}

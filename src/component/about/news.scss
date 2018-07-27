@@ -3,6 +3,9 @@
 	background: #f5f6f8;
 	padding-top: 60px;
 	padding-bottom: 20px;
+	@media screen and (max-width: 768px) {
+		padding-top: 20px;
+	}
 	.news_list {
 		max-width: 1200px;
 		// min-width: 480px;

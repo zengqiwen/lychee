@@ -1,15 +1,15 @@
 .sxl {
 	width: 100%;
+	h2 {
+		font-size: 34px;
+		line-height: 98px;
+		text-align: center;
+	}
 
 	.sxl_contract {
 		max-width: 1200px;
 		margin: auto;
 		padding-top: 28px;
-		h2 {
-			font-size: 34px;
-			line-height: 98px;
-			text-align: center;
-		}
 		.contract_content {
 			display: -webkit-box;
 			display: -moz-box;
@@ -68,6 +68,22 @@
 				}
 			}
 		}
+		@media screen and (max-width: 768px) {
+			padding-top: 0;
+			.contract_content {
+				display: block;
+				.content_pic {
+					width: 100%;
+					padding: 10px;
+					box-sizing: border-box;
+				}
+				.content {
+					width: 100%;
+					padding: 10px;
+					box-sizing: border-box;
+				}
+			}
+		}
 	}
 	.sxl_management_bg {
 		width: 100%;
@@ -76,11 +92,6 @@
 			max-width: 1200px;
 			margin: 0 auto;
 			padding-top: 28px;
-			h2 {
-				font-size: 34px;
-				line-height: 98px;
-				text-align: center;
-			}
 			.management_content {
 				margin-top: 30px;
 				display: -webkit-box;
@@ -140,6 +151,23 @@
 					}
 				}
 			}
+			@media screen and (max-width: 768px) {
+				padding-top: 0;
+				.management_content {
+					margin-top: 0;
+					display: block;
+					.content_pic {
+						width: 100%;
+						padding: 10px;
+						box-sizing: border-box;
+					}
+					.content {
+						width: 100%;
+						padding: 10px;
+						box-sizing: border-box;
+					}
+				}
+			}
 		}
 	}
 	.sxl_protect {
@@ -147,11 +175,6 @@
 		margin: auto;
 		padding-top: 28px;
 		padding-bottom: 110px;
-		h2 {
-			font-size: 34px;
-			line-height: 98px;
-			text-align: center;
-		}
 		.protect_content {
 			display: -webkit-box;
 			display: -moz-box;
@@ -172,10 +195,10 @@
 			.content_pic {
 				width: 50%;
 				text-align: center;
+				max-width: 375px;
 				img {
 					display: block;
-					width: 375px;
-					height: 350px;
+					width: 100%;
 					margin: 0 auto;
 				}
 			}
@@ -211,6 +234,27 @@
 				}
 			}
 		}
+		@media screen and (max-width: 768px) {
+			padding-top: 0;
+			padding-bottom: 0;
+
+			.protect_content {
+				display: block;
+				.content_pic {
+					width: 80%;
+					margin: auto;
+					display: block;
+					padding: 10px;
+					box-sizing: border-box;
+				}
+				.content {
+					width: 100%;
+					padding: 10px;
+					box-sizing: border-box;
+				}
+			}
+		}
+
 	}
 	.sxl_main_bg {
 		width: 100%;
@@ -220,16 +264,22 @@
 			margin: 0 auto;
 			padding-top: 28px;
 			padding-bottom: 110px;
-			h2 {
-				font-size: 34px;
-				line-height: 98px;
-				text-align: center;
-			}
 			.main_content {
 				margin-top: 45px;
 				img {
 					display: block;
 					width: 100%;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				padding-top: 0;
+				padding-bottom: 20px;
+				.main_content {
+					margin-top: 20px;
+					img {
+						display: block;
+						width: 100%;
+					}
 				}
 			}
 		}
@@ -239,11 +289,6 @@
 		margin: auto;
 		padding-top: 28px;
 		padding-bottom: 110px;
-		h2 {
-			font-size: 34px;
-			line-height: 98px;
-			text-align: center;
-		}
 		p {
 			color: #9d9fa7;
 			text-align: center;
@@ -254,6 +299,17 @@
 				display: block;
 				width: 90%;
 				margin: 0 auto;
+			}
+		}
+		@media screen and (max-width: 768px) {
+			padding-top: 0;
+			padding-bottom: 20px;
+			.overview_content {
+				margin-top: 20px;
+				img {
+					display: block;
+					width: 100%;
+				}
 			}
 		}
 	}

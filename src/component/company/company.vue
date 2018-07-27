@@ -1,7 +1,8 @@
 <template>
 	<div class="company">
 		<div class="company_pic">
-			<img src="src/assets/imgs/company_02.png">
+			<img src="src/assets/imgs/company_02.png" v-if = "!show">
+			<img src="src/assets/imgs/company_02_s.png" v-if = "show">
 		</div>
 		<div class="beforeLoan">
 			<h3>贷前信用评分</h3>
@@ -97,13 +98,28 @@
 		components: {
 		
 		},
+		computed: {
+			show: {
+				get: function(){
+					return this.$store.state.home.onresize;
+				},
+				set: function(val){
+
+				}
+			}
+		},
 		methods: {
 
 		},
 		created: function(){
 		},
 		mounted: function(){
+			if(window.innerWidth <= 768) {
+				this.$store.state.home.onresize = true;
+			} else {
+				this.$store.state.home.onresize = false;
 
+			}
 		}
 
 	}

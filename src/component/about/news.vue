@@ -94,10 +94,10 @@
 
 		},
 		mounted: function(){
-			axios.post(url.global.baseurl + 'test', qs.stringify({test: 'test'})).then(res=>{
-              	console.log(res);
+			// axios.post(url.global.baseurl + 'test', qs.stringify({test: 'test'})).then(res=>{
+   //            	console.log(res);
               
-            });
+   //          });
 		}
 
 	}

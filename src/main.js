@@ -23,21 +23,15 @@ import './assets/font-awesome/css/font-awesome.css';
 //VueAwesomeSwiper滑块插件；
 import VueAwesomeSwiper from 'vue-awesome-swiper';
 import 'swiper/dist/css/swiper.min.css';
+
+Vue.use(VueAwesomeSwiper);
+
 // import 'swiper/dist/css/swiper.css';
 
 // 轮播图，在入口文件中引入(暂时不支持单组件引入的方式):
 import wcSwiper from 'wc-swiper';
 import 'wc-swiper/style.css';
-
 Vue.use(wcSwiper);
-
-Vue.use(VueAwesomeSwiper);
-
-Vue.prototype.$ajax = axios;
-
-Vue.use(ElementUI);
-
-Vue.use(animate);
 
 //滚动动画插件scrollreveal;
 //import scrollReveal from 'scrollreveal';  //引入第三方插件，最后.js后缀可以不写
@@ -46,8 +40,12 @@ Vue.use(animate);
 //图片懒加载； 
 // import VueLazyload from 'vue-lazyload';
 // Vue.use(VueLazyload);
-import 'babel-polyfill';
+import "babel-polyfill";
 
+Vue.prototype.$ajax = axios;
+
+Vue.use(ElementUI);
+Vue.use(animate);
 
 //固定定位水平滚动。
 window.onscroll=function(){

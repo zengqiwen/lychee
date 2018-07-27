@@ -1,7 +1,8 @@
 <template>
 	<div class="personal">
 			<div class="personal_pic">
-				<img src="src/assets/imgs/personal_02.png">
+				<img src="src/assets/imgs/personal_02.png" v-if = "!show">
+				<img src="src/assets/imgs/personal_02_s.png" v-if = "show">
 			</div>
 			<!-- 贷前评分 -->
 			<div class="beforeLoan">
@@ -153,13 +154,28 @@
 		components: {
 		
 		},
+		computed: {
+			show: {
+				get: function(){
+					return this.$store.state.home.onresize;
+				},
+				set: function(val){
+
+				}
+			}
+		},
 		methods: {
 
 		},
 		created: function(){
 		},
 		mounted: function(){
+			if(window.innerWidth <= 768) {
+				this.$store.state.home.onresize = true;
+			} else {
+				this.$store.state.home.onresize = false;
 
+			}
 		}
 
 	}
