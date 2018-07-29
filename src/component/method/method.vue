@@ -1,11 +1,14 @@
 <template>
 	<div class="method">
 		<div class="method_lamp">
-			<img :src='"src/assets/imgs/" + picture'>
-			<div class="method_title wow slideInLeft">
-				<h1 v-text = "title"></h1>
+			<img :src='"src/assets/imgs/" + picture' v-show = "!showSmall">
+			<img :src='"src/assets/imgs/" + smallPicture' v-show = "showSmall">
+			<div class="method_title">
+				<h1 v-text = "title">1</h1>
 				<p v-text = "desc"></p>
-				<button v-show = "show">在线申请</button>
+				<!-- <button v-show = "show">在线申请</button> -->
+				<button v-show = "activeName == 'second'">在线申请2</button>
+				<button v-show = "activeName == 'third'">在线申请3</button>
 			</div>
 		</div>
 		<div class="method_nav">
@@ -20,22 +23,37 @@
 <script>
 	import './method.scss';
 	import Sxl from './Sxl.vue';
-	import Company from './Company.vue';
-	import Personal from './Personal.vue';
+	import Company from './methodCompany.vue';
+	import Personal from './methodPersonal.vue';
 
 	export default {
 		data: function(){
 			return {
 				activeName: 'first',
 				picture: 'method_sxl.png',
+				smallPicture: 'method_sxl_s.png',
 				title: '',
 				desc: '',
-				show: false,
 				picItem: [
 					'method_sxl.png',
 					'method_company.png',
 					'method_personal.png'
+				],
+				smallPicItem: [
+					'method_sxl_s.png',
+					'method_company_s.png',
+					'method_personal_s.png'
 				]
+			}
+		},
+		computed: {
+			showSmall: {
+				get: function(){
+					return this.$store.state.home.onresize;
+				},
+				set: function(val){
+
+				}
 			}
 		},
 		components: {
@@ -48,22 +66,23 @@
 			        console.log(this.activeName);
 			        switch(this.activeName){
 			        	case 'second':
+			        		console.log(this.activeName)
 			        		this.picture = this.picItem[1];
+			        		this.smallPicture = this.smallPicItem[1];
 			        		this.title = '在此输入banner广告标题';
 			        		this.desc = '在此输入企业信用解决方案的相关描述。'
-			        		this.show = true;
 			        		break;
 			        	case 'third':
 			        		this.picture = this.picItem[2];
+			        		this.smallPicture = this.smallPicItem[2];
 			        		this.title = '在此输入banner广告标题';
 			        		this.desc = '在此输入个人信用解决方案的相关描述。'
-			        		this.show = true;
 			        		break;
 			        	default:
 			        		this.picture = this.picItem[0];
+			        		this.smallPicture = this.smallPicItem[0];
 			        		this.title = '';
 			        		this.desc = ''
-			        		this.show = false;
 			        		break;
 			        }
 			    }
@@ -71,7 +90,12 @@
 		created: function(){
 		},
 		mounted: function(){
+			if(window.innerWidth <= 768) {
+				this.$store.state.home.onresize = true;
+			} else {
+				this.$store.state.home.onresize = false;
 
+			}
 		}
 
 	}

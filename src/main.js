@@ -40,6 +40,7 @@ Vue.use(wcSwiper);
 //图片懒加载； 
 // import VueLazyload from 'vue-lazyload';
 // Vue.use(VueLazyload);
+import "babel-polyfill";
 
 Vue.prototype.$ajax = axios;
 

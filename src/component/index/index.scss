@@ -8,6 +8,7 @@
      h2 {
       font-size: 24px;
       margin-bottom: 14px;
+      padding: 0 10px;  
     }
   }
   .swiper-container {
@@ -23,7 +24,7 @@
       background: #fff;
       border-radius: 5px;
     }
-    button {
+/*     button {
       cursor: pointer;
       outline: none;
       border-radius: 5px;
@@ -44,18 +45,7 @@
       color: #fff;
       background: transparent;
       border: 1px solid #b8c7e0;
-    }
-  }
-
-  .el-carousel {
-    // height: 680px;
-    width: 100%;
-    .el-carousel__item {
-      height: 100%;
-      img{
-        width: 100%;
-      }
-    }    
+    } */
   }
   // 区块链
   .index_qkl_bg {
@@ -65,8 +55,7 @@
       max-width: 1200px;
       margin: 0 auto;
       padding-top: 80px;
-      min-height: 620px;
-      
+      // min-height: 620px;    
       p {
         font-size: 26px;
         line-height: 36px;
@@ -75,6 +64,7 @@
       @media screen and (max-width: 768px) {
         padding-top: 30px;
         p {
+          padding: 0 10px;
           font-size: 18px;
           line-height: 26px;
           margin-bottom: 15px;
@@ -82,10 +72,10 @@
       }
       .index_qkl_content {
         overflow: hidden;
+        padding-bottom: 20px;
         .content_l {
           float: left;
           width: 30%;
-          
           .content_list {
             padding-top: 10px;
             li {
@@ -112,8 +102,9 @@
           @media screen and (max-width: 768px) {
             clear: both;
             width: 100%;
+            position: relative;
             .content_list {
-              padding-top: 10px;
+              padding: 10px;
               li {
                 font-size: 14px;
                 line-height: 32px;
@@ -122,6 +113,9 @@
               }
             }
             button {
+              position: absolute;
+              right: 50px;
+              bottom: 50px;
               display: block;
               outline: none;
               cursor: pointer;
@@ -151,6 +145,8 @@
               font-size: 16px;
               line-height: 28px;
               color: #222;
+              padding: 0 10px;
+
             }
             li:before {
               content:counter(sectioncounter) "、"; 
@@ -224,6 +220,10 @@
     padding-top: 150px;
     .lf_picture {
       position: relative;
+      width: 60%;
+      float: left;
+      height: 100%;
+      margin-bottom: 20px;
       img {
         width: 80%;
         display: block;
@@ -235,65 +235,12 @@
         margin: auto;
       }
     }
-    .rf_title {
-      margin-bottom: 45px;
-      /* h2 {
-        font-size: 34px;
-        margin-bottom: 24px;
-      } */
-      h3 {
-        font-size: 24px;
-        margin-bottom: 15px;
-      }
-      p {
-        font-size: 18px;
-        color: #888;
-      }
-      button {
-        outline: none;
-        cursor: pointer;
-        width: 132px;
-        height: 48px;
-        -moz-border-radius: 24px;
-             border-radius: 24px;
-        color: #1fb9ff;
-        border: 2px solid #1fb9ff;
-        margin-top: 50px;
-        background: #fff;
-      }
-      .el-button--primary {
-        color: #fff;
-      }
-    }
-  }
-  // 信用租机
-  .index_yqd_bg {
-    width: 100%;
-    background: #f5f6f8;
-    .index_yqd {
-      max-width: 1200px;
-      margin: 0 auto;
-      height: 500px;
-      padding-top: 150px;
-      .lf_picture {
-        position: relative;
-        img {
-          width: 80%;
-          display: block;
-          position: absolute;
-          left: 0;
-          top: 0;
-          /* right: 0;*/
-          /* bottom: 0;*/
-          margin: auto;
-        }
-      }
+    .rf_desc {
+      width: 40%;
+      height: 100%;
+      float: right;
       .rf_title {
         margin-bottom: 45px;
-        /* h2 {
-          font-size: 34px;
-          margin-bottom: 24px;
-        } */
         h3 {
           font-size: 24px;
           margin-bottom: 15px;
@@ -319,8 +266,114 @@
         }
       }
     }
+    @media screen and (max-width: 768px) {
+      height: auto;
+      padding: 0 10px;
+      padding-top: 20px;
+      height: auto;
+      .lf_picture {
+        clear: both;
+        width: 100%;
+        position: static;
+        img {
+          position: static;
+
+        }
+      }
+      .rf_desc {
+        clear: both;
+        width: 100%;
+        padding-top: 20px;
+        .rf_title {
+          margin-bottom:20px;
+          h3 {
+            font-size: 17px;
+          }
+          p {
+            font-size: 14px;
+          }
+          button {
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
   }
-  
+  // 信用租机
+  .index_xyzj_bg {
+    width: 100%;
+    background: #f5f6f8;
+    .index_xyzj {
+      max-width: 1200px;
+      margin: 0 auto;
+      min-height: 500px;
+      padding-top: 150px;
+      .lf_picture {
+        float: left;
+        width: 60%;
+        height: 100%;
+        position: relative;
+        img {
+          width: 80%;
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 0;
+          /* right: 0;*/
+          /* bottom: 0;*/
+          margin: auto;
+        }
+      }
+      .rf_desc {
+        float: right;
+        width: 40%;
+        height: 100%;
+        .rf_title {
+          margin-bottom: 45px;
+          h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+          }
+          p {
+            font-size: 18px;
+            color: #888;
+          }
+        }
+      }
+      @media screen and (max-width: 768px) {
+        padding-top: 20px;
+        height: auto;
+        .lf_picture {
+          clear: both;
+          width: 100%;
+          position: static;
+          text-align: center;
+          img {
+            position: static;
+
+          }
+        }
+        .rf_desc {
+          clear: both;
+          width: 100%;
+          padding-top: 20px;
+          .rf_title {
+            margin-bottom: 20px;
+            padding: 0 10px;  
+            h3 {
+              font-size: 17px;
+              margin-bottom: 15px;
+            }
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
   .index_cooperate_bg {
     width: 100%;
     background: #f5f6f8;
@@ -337,30 +390,47 @@
       }
       .cooperate_list {
         width: 100%;
-        .el-col {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        li {
+          width: 250px;
           height: 100px;
-          // min-width: 150px;
+          background: #fff;
           margin-bottom: 20px;
-          div {
-            position: relative;
-            background: #fff;
-            height: 100%;
-            &:hover {
-              border: 1px solid #67b6ff;
-              cursor: pointer;
-            }
-            img {
-              display: block;
-              position: absolute;
-              left: 0;
-              top: 0;
-              right: 0;
-              bottom: 0;
-              margin: auto;
-              width: 200px;
-              height: 100px;
+          margin-right: 20px;
+          position: relative;
+          box-sizing: border-box;
+          &:hover {
+            border: 1px solid #67b6ff;
+          }
+          img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+          }
+        }
+      }
+      @media screen and (max-width: 768px) {
+        padding-bottom: 20px;
+        .cooperate_list {
+          justify-content: space-around;
+
+          li {
+            width: 150px;
+            height: 80px;
+            margin-right: 0;
+            img{
+              width: 100%;
             }
           }
+        }
+        h3 {
+          margin: 20px 0;
         }
       }
     }

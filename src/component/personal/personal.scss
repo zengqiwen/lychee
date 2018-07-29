@@ -2,8 +2,38 @@
 	width: 100%;
 	.personal_pic {
 		width: 100%;
+		position: relative;
 		img {
+			display: block;
 			width: 100%;
+		}
+		.title {
+			position: absolute;
+			max-width: 500px;
+			height: 100%;
+			left: 50%;
+			top: 0;
+			color: #fff;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			h3 {
+				font-size: 40px;
+			}
+			p {
+				font-size: 17px;
+				line-height: 30px;
+			}
+			@media screen and (max-width: 768px) {
+				left: 30%;
+				h3 {
+					font-size: 17px;
+				}
+				p {
+					font-size: 11px;
+					line-height: 14px;
+				}	
+			}
 		}
 	}
 	.beforeLoan {
