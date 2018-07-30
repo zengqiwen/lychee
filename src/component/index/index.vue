@@ -10,8 +10,8 @@
 		<swiper :options="swiperOption">
 			<swiper-slide v-for="(item, index) in items" :key="index">
 			<img :src="item" alt="">
-			<button v-if = "index == 0" class = "btn_detail">了解详情</button>
-			<button v-if = "index == 1" class = "btn_more">了解更多</button>
+			<!-- <button v-if = "index == 0" class = "btn_detail">了解详情</button>
+			<button v-if = "index == 1" class = "btn_more">了解更多</button> -->
 			</swiper-slide>
 			<div class="swiper-pagination" slot="pagination"></div>
 		</swiper>

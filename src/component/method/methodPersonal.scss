@@ -194,9 +194,16 @@
 				padding-top: 0;
 				padding-bottom: 20px;
 				.coops {
+					justify-content: space-around;	
 					padding-top: 30px;
 					.coops_item {
 						margin-right: 0;
+						width: 150px;
+						height: 80px;
+						img {
+							width: 100%;
+						}
+
 					}
 				}
 			}

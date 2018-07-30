@@ -38,7 +38,7 @@
 					height: 30px;
 					position: absolute;
 					right: 45px;
-					top: 90px;
+					top: 80px;
 					font-size: 16px;
 					cursor: pointer;
 					@media screen and (max-width: 768px) {
@@ -93,10 +93,17 @@
 						-webkit-box-sizing: border-box;
 						   -moz-box-sizing: border-box;
 						        box-sizing: border-box;
-						color: #0579cb;
 						border: 1px solid #0579cb;
 						background: #fff;
 						margin: 15px 0;
+						a {
+							display: block;
+							width: 100%;
+							height: 100%;
+							color: #0579cb;
+							text-align: center;
+							line-height: 40px;
+						}
 					}
 				}
 			}

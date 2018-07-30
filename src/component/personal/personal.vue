@@ -3,6 +3,10 @@
 			<div class="personal_pic">
 				<img src="src/assets/imgs/personal_02.png" v-if = "!show">
 				<img src="src/assets/imgs/personal_02_s.png" v-if = "show">
+				<div class="title">
+					<h3>个人信用</h3>
+					<p>立趣个人信用分是在用户授权的情况下，依据用户留存在运营商的各类消费及行为数据，结合传统金融收支数据、借贷数据、信用数据，运用大数据及机器学习等技术，通过逻辑回归、决策树、随机森林等模型算法，对各维度数据进行综合处理和评估。</p>
+				</div>
 			</div>
 			<!-- 贷前评分 -->
 			<div class="beforeLoan">
