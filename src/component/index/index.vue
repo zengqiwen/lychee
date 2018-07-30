@@ -152,6 +152,49 @@
 					  <li><img src="src/assets/imgs/coop-ecloud.png"></li>
 					  <li><img src="src/assets/imgs/coop-mingcheng.png"></li>
 				</ul>
+			<!-- 	<div class="cooperate_list">
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<div class="coop-partner">
+							<img src="src/assets/imgs/coop-telecom.png">
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<div class="coop-partner">
+							<img src="src/assets/imgs/coop-bok.png">
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<div class="coop-partner">
+							<img src="src/assets/imgs/coop-jingdong.png">
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<div class="coop-partner">
+							<img src="src/assets/imgs/coop-haier.png">
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<div class="coop-partner">
+							<img src="src/assets/imgs/coop-wuxi.png">
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<div class="coop-partner">
+							<img src="src/assets/imgs/coop-xiaonuo.png">
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<div class="coop-partner">
+							<img src="src/assets/imgs/coop-ecloud.png">
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<div class="coop-partner">
+							<img src="src/assets/imgs/coop-mingcheng.png">
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div> -->
 
 			</div>
 		</div>
