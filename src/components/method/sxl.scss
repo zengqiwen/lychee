@@ -83,6 +83,9 @@
 					width: 100%;
 					padding: 10px;
 					box-sizing: border-box;
+					img {
+						width: 100%;
+					}
 				}
 				.content {
 					width: 100%;
@@ -124,6 +127,7 @@
 					img {
 						display: block;
 						margin: 0 auto;
+
 					}
 				}
 				.content {
@@ -167,11 +171,15 @@
 						width: 100%;
 						padding: 10px;
 						box-sizing: border-box;
+						img {
+							width: 100%;
+						}
 					}
 					.content {
 						width: 100%;
 						padding: 10px;
 						box-sizing: border-box;
+
 					}
 				}
 			}
@@ -254,6 +262,9 @@
 					display: block;
 					padding: 10px;
 					box-sizing: border-box;
+					img {
+						width: 100%;
+					}
 				}
 				.content {
 					width: 100%;
