@@ -1,0 +1,66 @@
+.newsContent_bg {
+	width: 100%;
+	background: #fff;
+	padding-bottom: 20px;
+	.newsContent_img {
+		position: relative;
+		width: 100%;
+		.about_lamp {
+			width: 100%;
+			display: block;
+		}
+		h2 {
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+			text-align: center;
+			color: #fff;
+			height: 24px;
+			font-size: 24px;
+			@media screen and (max-width: 768px) {
+				font-size: 17px;
+			}
+		}
+	}
+	.newsContent {
+		max-width: 1200px;
+		margin: 0 auto;
+		h3 {
+			padding-top: 40px;
+		    padding-bottom: 15px;
+		    color: #000;
+		    font-size: 24px;
+		}
+		.pub_time {
+			padding-top: 15px;
+			padding-bottom: 15px;
+			span {
+				font-size: 14px;
+				padding-right: 15px;	
+			}
+			.postTime {
+				color: #989898;
+			}
+			.publisher {
+				color: #0059bd;
+			}
+		}
+		@media screen and (max-width: 768px) {
+			// padding-top: 20px;
+			width: 100%;
+			h3 {
+				padding-top: 0;
+				padding-bottom: 0;
+			}
+			.content {
+				img {
+					width: 100%!important;
+					height: auto!important;
+				}
+			}
+		}
+	}
+}

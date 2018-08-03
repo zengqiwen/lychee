@@ -1,59 +1,40 @@
-import $ from 'jquery'
-import baseurl from './assets/common/common.js'
-
-//icon-font;
-import './assets/icon-font/iconfont.css';
-
+// The Vue build version to load with the `import` command
+// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue';
-import App from './App.vue';
-import router from './router/index.js';
+import App from './App';
+import router from './router';
+
 import store from './vuex/store.js';
-
-//axios请求
-import axios from 'axios';
-
-//动画;
-import animate from 'animate.css';
-
 //Element UI;
 import ElementUI from 'element-ui';
 import '../node_modules/element-ui/lib/theme-chalk/index.css';
-import './assets/font-awesome/css/font-awesome.css';
+Vue.use(ElementUI);
 
 //VueAwesomeSwiper滑块插件；
 import VueAwesomeSwiper from 'vue-awesome-swiper';
-import 'swiper/dist/css/swiper.min.css';
-
+import '../node_modules/swiper/dist/css/swiper.min.css';
 Vue.use(VueAwesomeSwiper);
 
-// import 'swiper/dist/css/swiper.css';
+//字体图标；
+import './assets/font-awesome/css/font-awesome.css';
 
-// 轮播图，在入口文件中引入(暂时不支持单组件引入的方式):
-import wcSwiper from 'wc-swiper';
-import 'wc-swiper/style.css';
-Vue.use(wcSwiper);
+import $ from 'jquery';
 
-//滚动动画插件scrollreveal;
-//import scrollReveal from 'scrollreveal';  //引入第三方插件，最后.js后缀可以不写
-//Vue.prototype.$scrollreveal = scrollReveal;  //注册到Vue原型上，名字可以自己命名一个，;
-
-//图片懒加载； 
-// import VueLazyload from 'vue-lazyload';
-// Vue.use(VueLazyload);
-import "babel-polyfill";
-
-Vue.prototype.$ajax = axios;
-
-Vue.use(ElementUI);
-Vue.use(animate);
+//bootstrap;
+import './assets/bootstrap/css/bootstrap.min.css';
 
 //固定定位水平滚动。
 window.onscroll=function(){
 	var sl=-Math.max(document.body.scrollLeft,document.documentElement.scrollLeft);
 	document.getElementById('fixed').style.left=sl+'px';
-}
+};
+
 //切换路由回到顶部；
 router.afterEach((to,from,next) => {
+  if (to.meta.title) {
+      document.title = to.meta.title
+    }
+	// store.state.home.active = '2';
   	window.scrollTo(0,0);
 });
 
@@ -62,18 +43,40 @@ router.beforeEach((to, from, next) => {
   	window.scrollTo(0,0);
     var path = router.options.routes[0].children;
     path.map((item, idx)=>{
-    	if(item.path == to.path){
-    		var num = String(idx);
-    		store.state.home.active = num;
-    		// router.push(to.path);
+    	if(item.children){
+    		item.children.map((item2, idx2)=>{
+    			if(item2.path == to.path){
+    				var num = String(idx);
+
+    				if(num == 4){
+              $('.el-submenu__title').map((idx, item)=>{
+                if(idx == 1) {
+                  
+                }
+                
+              })
+            }
+    			}
+    		})
+    		
+    	} else {
+    		if(item.path == to.path){
+    			var num = String(idx);
+    			store.state.home.active = num;
+    		}
     	}
+    	
     })
     next();
 });
+
+
+Vue.config.productionTip = false
 
 new Vue({
   el: '#app',
   router,
   store,
-  render: h => h(App)
+  components: { App },
+  template: '<App/>'
 })

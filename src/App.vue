@@ -7,7 +7,7 @@
   </div>
 </template>
 <script type="text/javascript">
-  import spinner from './component/spinner/spinner.vue';
+  import spinner from './components/spinner/spinner.vue';
   export default {
     name: "app",
     components: {
@@ -26,10 +26,14 @@
 
 <style lang="scss">
   *{margin:0;padding:0;}
+  html, body{
+    font-family: SourceHanSansCN-Normal, Helvetica Neue,Helvetica,Arial,sans-serif !important;
+    width: 100%;
+    font-size: 14px;
+  }
   #app {
     position: relative;
     width: 100%;
   }
 </style>
-
 

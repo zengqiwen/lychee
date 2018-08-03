@@ -1,0 +1,506 @@
+.btn {
+  outline: none;
+  cursor: pointer;
+  width: 132px;
+  height: 48px;
+  -moz-border-radius: 24px;
+       border-radius: 24px;
+  color: #1fb9ff;
+  border: none;
+  margin-top: 20px;
+  // background: #fff;
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 48px;
+    background: #fff;
+    border-radius: 24px;
+    color: #1fb9ff;
+    border: 2px solid #1fb9ff;
+    &:hover {
+      background: #1fb9ff;
+      color: #fff;
+      boder: none;
+      text-decoration: none;
+    }
+  }
+}
+.index {
+  width: 100%;
+  h2 {
+    font-size: 34px;
+    margin-bottom: 24px;
+  }
+
+  .swiper-container {
+    width: 100%;
+    position: relative;
+    img {
+      width: 100%;
+      display: block;
+    }
+    .swiper-pagination-bullet {
+      width: 60px;
+      height: 5px;
+      background: #fff;
+      border-radius: 5px;
+      outline: none;
+    }
+    h3 {
+      position: absolute;
+      left: 0;
+      bottom: 55%;
+      margin: auto;
+      height: 9%;
+      width: 100%;
+      text-align: center;
+      color: #fff;
+    }
+    h4 {
+      position: absolute;
+      left: 0;
+      bottom: 42%;
+      margin: auto;
+      height: 9%;
+      width: 100%;
+      text-align: center;
+      color: #fff;
+    }
+    button {
+      cursor: pointer;
+      outline: none;
+      border-radius: 5px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 120px;
+      height: 40px;
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        line-height: 40px;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      
+    }
+    .btn_detail {
+      bottom: 23%;
+      background: #f4cf04;
+      border: none;
+      a {
+        color: #000;
+      }
+    }
+    .btn_more {
+      bottom: 30%;
+      color: #fff;
+      background: transparent;
+      border: 1px solid #b8c7e0;
+      a {
+        color: #fff;
+      }
+    }
+
+  }
+  @media screen and (max-width: 768px) {
+     h2 {
+      font-size: 24px;
+      margin-bottom: 14px;
+      padding: 0 10px;  
+    }
+    .swiper-container {
+      button{
+        width: 80px;
+        height: 25px;
+        a {
+          line-height: 30px;
+          font-size: 12px;
+        }
+      }
+      .btn_detail {
+        bottom: 18%;
+       
+      }
+      .btn_more {
+        bottom: 25%;
+      }
+      h3 {
+      
+        bottom: 70%;
+        font-size: 17px;
+      }
+      h4 {
+       
+        bottom: 50%;
+        font-size: 14px;
+      
+      }
+    }
+  }
+  // 区块链
+  .index_qkl_bg {
+    width: 100%;
+    background: #f5f6f8;
+    .index_qkl {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-top: 80px;
+      // min-height: 620px;    
+      p {
+        font-size: 26px;
+        line-height: 36px;
+        margin-bottom: 30px;
+      }
+      @media screen and (max-width: 768px) {
+        padding-top: 30px;
+        p {
+          padding: 0 10px;
+          font-size: 18px;
+          line-height: 26px;
+          margin-bottom: 15px;
+        }
+      }
+      .index_qkl_content {
+        overflow: hidden;
+        padding-bottom: 40px;
+        .content_l {
+          float: left;
+          width: 30%;
+          .content_list {
+            padding-top: 10px;
+            li {
+              /* min-width: 250px;*/
+
+              font-size: 24px;
+              line-height: 62px;
+              color: #424242;
+              list-style: disc inside;
+            }
+          }
+          button {
+            @extend .btn;
+          }
+          @media screen and (max-width: 768px) {
+            clear: both;
+            width: 100%;
+            position: relative;
+            .content_list {
+              padding: 10px;
+              li {
+                font-size: 14px;
+                line-height: 32px;
+                color: #424242;
+                list-style: disc inside;
+              }
+            }
+            button {
+              position: absolute;
+              right: 50px;
+              bottom: 50px;
+              display: block;
+              outline: none;
+              cursor: pointer;
+              width: 132px;
+              height: 48px;
+              -moz-border-radius: 24px;
+              margin: 10px auto;
+            }
+          }
+        }
+        .content_r {
+          float: left;
+          width: 70%;
+          @media screen and (max-width: 768px) {
+            clear: both;
+            width: 100%;
+          }
+          img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+          }
+          .content_desc {
+            margin-top: 30px;
+            list-style-type:none;
+            counter-reset:sectioncounter;
+            li {
+              font-size: 16px;
+              line-height: 28px;
+              color: #222;
+              padding: 0 10px;
+
+            }
+            li:before {
+              content:counter(sectioncounter) "、"; 
+              counter-increment:sectioncounter;
+            }
+          }
+        }
+      }
+    }
+  }
+  // 翼购平台
+/*   .index_ygpt_bg {
+    width: 100%;
+    background: #f5f6f8;  
+    .index_ygpt {
+      max-width: 1200px;
+      margin: 0 auto;
+      overflow: hidden;
+      padding-top: 5%;
+      .lf_content {
+        width: 40%;
+      }
+      .lf_title {
+        margin-bottom: 45px;
+        h3 {
+          font-size: 24px;
+          margin-bottom: 15px;
+        }
+        p {
+          font-size: 18px;
+          color: #888;
+        }
+        button {
+          outline: none;
+          cursor: pointer;
+          width: 132px;
+          height: 48px;
+          -moz-border-radius: 24px;
+               border-radius: 24px;
+          color: #1fb9ff;
+          border: none;
+          margin-top: 50px;
+          background: #fff;
+        }
+        .el-button--primary {
+          color: #fff;
+        }
+      }
+      .rf_picture {
+        width: 60%;
+        padding-top: 5%;
+        img {
+          width: 80%;
+          display: block;
+          margin: auto;
+        }
+      }
+      @media screen and (max-width:768px) {
+        padding-top: 20px;
+          .lf_content {
+          width: 100%;
+        }
+      }
+    }
+  } */
+  // 翼企购
+  .index_yqd {
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 600px;
+    padding-top: 150px;
+    .lf_picture {
+      position: relative;
+      width: 60%;
+      float: left;
+      height: 100%;
+      padding-bottom: 20px;
+      img {
+        width: 80%;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        /* right: 0;*/
+        /* bottom: 0;*/
+        margin: auto;
+      }
+    }
+    .rf_desc {
+      width: 40%;
+      height: 100%;
+      float: right;
+      .rf_title {
+        margin-bottom: 45px;
+        h3 {
+          font-size: 24px;
+          margin-bottom: 15px;
+        }
+        p {
+          font-size: 18px;
+          color: #888;
+        }
+        button {
+          @extend .btn;
+        }
+        .el-button--primary {
+          color: #fff;
+        }
+      }
+    }
+    @media screen and (max-width: 768px) {
+      height: auto;
+      padding: 0 10px;
+      padding-top: 20px;
+      .lf_picture {
+        clear: both;
+        width: 100%;
+        position: static;
+        img {
+          position: static;
+        }
+      }
+      .rf_desc {
+        clear: both;
+        width: 100%;
+        padding-top: 20px;
+        .rf_title {
+          margin-bottom:20px;
+          h3 {
+            font-size: 17px;
+          }
+          p {
+            font-size: 14px;
+          }
+          button {
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+  // 信用租机
+  .index_xyzj_bg {
+    width: 100%;
+    background: #f5f6f8;
+    .index_xyzj {
+      max-width: 1200px;
+      margin: 0 auto;
+      min-height: 600px;
+      padding-top: 100px;
+      .lf_picture {
+        float: left;
+        width: 60%;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 80%
+        }
+      }
+      .rf_desc {
+        float: right;
+        width: 40%;
+        // height: 100%;
+        .rf_title {
+          margin-bottom: 45px;
+          h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+          }
+          p {
+            font-size: 18px;
+            color: #888;
+          }
+        }
+      }
+      @media screen and (max-width: 768px) {
+        padding-top: 20px;
+        height: 800px;
+        .lf_picture {
+          clear: both;
+          width: 100%;
+          text-align: center;
+          display: block;
+
+          img {
+            display: block;
+            width: 100%;
+            &:nth-of-type(2){
+              width: 80%;
+            }
+          }
+        }
+        .rf_desc {
+          clear: both;
+          width: 100%;
+          padding-top: 20px;
+          .rf_title {
+            margin-bottom: 20px;
+            padding: 0 10px;  
+            h3 {
+              font-size: 17px;
+              margin-bottom: 15px;
+            }
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .index_cooperate_bg {
+    width: 100%;
+    background: #fff;
+    .index_cooperate {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-bottom: 90px;
+      h3 {
+        display: inline-block;
+        width: 100%;
+        font-size: 22px;
+        text-align: center;
+        margin: 60px 0 90px 0;
+      }
+      .cooperate_list {
+        width: 100%;
+        .coop-partner {
+          background: #f5f6f8;
+          margin-bottom: 20px;
+          img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+          }
+        }
+      /*   li {
+          width: 250px;
+          height: 100px;
+          background: #fff;
+          margin-bottom: 20px;
+          margin-right: 20px;
+          position: relative;
+          box-sizing: border-box;
+          &:hover {
+            border: 1px solid #67b6ff;
+          }
+          img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+          }
+        } */
+      }
+     @media screen and (max-width: 768px) {
+        padding-bottom: 20px;
+        h3 {
+          margin: 20px 0;
+        }
+      } 
+    }
+  }
+}

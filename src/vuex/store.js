@@ -1,7 +1,7 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import Vue from 'vue';
+import Vuex from 'vuex';
 
-import home from '../component/home/home.js';
+import home from '../components/home/home.js';
 
 Vue.use(Vuex)
 

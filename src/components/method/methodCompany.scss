@@ -1,0 +1,262 @@
+.company {
+	h2 {
+		font-size: 34px;
+		line-height: 98px;
+		text-align: center;
+		@media screen and (max-width: 768px) {
+			margin: 0;
+		}
+	}
+	.company_img {
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+		img {
+			width: 100%;
+		}
+		.company_title {
+			position: absolute;
+			max-width: 1200px;
+			height: 60%;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			color: #fff;
+			letter-spacing: 10px;
+			p {
+				font-size: 20px;
+			}
+			button {
+				width: 35%;
+				background: transparent;
+				border: 1px solid #fff;
+				text-align: center;
+				font-size: 17px;
+				line-height: 250%;
+				color: #fff;
+				-moz-border-radius: 5px;
+				     border-radius: 5px;
+			}
+		}
+		@media screen and (max-width: 768px) {
+			.company_title {
+				top: 10%;
+				h1 {
+					font-size: 17px;
+				}
+				p {
+					font-size: 14px;
+				}
+				button {
+					width: 50%;
+				}
+			}
+		}
+	}
+	.company_plan_bg {
+		width: 100%;
+		background: #f5f6f8;
+		.company_plan {
+			max-width: 1200px;
+			margin: auto;
+			padding-top: 28px;
+			padding-bottom: 95px;
+			.plan_content {
+				margin-top: 45px;
+				display: -webkit-box;
+				display: -moz-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-orient: horizontal;
+				-webkit-box-direction: normal;
+				   -moz-box-orient: horizontal;
+				   -moz-box-direction: normal;
+				    -ms-flex-direction: row;
+				        flex-direction: row;
+				-webkit-box-pack: justify;
+				   -moz-box-pack: justify;
+				    -ms-flex-pack: justify;
+				        justify-content: space-between;
+				.el-card {
+					width: 48%;
+					// height: 450px;
+					.loanPlan {
+						width: 33%;
+						margin: 0 auto;
+						border-bottom: 1px solid #d1d1d1;
+						height: 130px;
+						text-align: center;
+						position: relative;
+						div {
+							width: 20px;
+							height: 20px;
+							background: #fff;
+							position: absolute;
+							left: 50%;
+							bottom: 0;
+							margin-bottom: -10px;
+							margin-left: -10px;
+							span {
+								width: 8px;
+								height: 8px;
+								-moz-border-radius: 50%;
+								     border-radius: 50%;
+								background: #13b6f9;
+								position: absolute;
+								left: 0;
+								top: 0;
+								right: 0;
+								bottom: 0;
+								margin: auto;
+							}
+						}
+					}
+					h3 {
+						text-align: center;
+						margin-top: 50px;
+						margin-bottom: 24px;
+					}
+					p {
+						line-height: 22px;
+						color: #949494;
+						padding: 0 35px;
+
+					}
+				}
+			}
+			@media screen and (max-width: 768px) {
+				padding-top: 0;
+				padding-bottom: 20px;
+				.plan_content {
+					display: block;
+					margin-top: 0px;
+					.el-card {
+						width: 100%;
+						margin-bottom: 20px;
+						.loanPlan {
+							height: 80px;
+						}
+						h3 {
+							margin-top: 20px;
+							margin-bottom: 20px;
+						}
+						p {
+							padding: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+	.company_map {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding-top: 28px;
+		padding-bottom: 110px;
+		p {
+			color: #a9a9a9;
+			text-align: center;
+			margin-bottom: 18px;
+		}
+		img {
+			display: block;
+			margin: 0 auto;
+			width: 100%;
+		}
+		@media screen and (max-width: 768px) {
+			padding-top: 0;
+			padding-bottom: 20px;
+		}
+	}
+	.company_coop_bg {
+		width: 100%;
+		background: #f5f6f8;
+		.company_coop {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding-top: 28px;
+			padding-bottom: 160px;
+			h2 {
+				width: 250px;
+				margin: 0 auto;
+				position: relative;
+				span {
+					display: inline-block;
+					width: 8px;
+					height: 8px;
+					-moz-border-radius: 50%;
+					     border-radius: 50%;
+					border: 6px solid #f5f6f8;
+					background: #1fb9ff;
+					position: absolute;
+					left: 50%;
+					bottom: 0;
+					margin-left: -10px;
+					margin-bottom: -10px;
+				}
+				&:after {
+					content: '';
+					display: block;
+					/* width: 10px;*/
+					height: 1px;
+					background: #cfcfcf;
+				}
+			}
+			.coops {
+				display: -webkit-box;
+				display: -moz-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-orient: horizontal;
+				-webkit-box-direction: normal;
+				   -moz-box-orient: horizontal;
+				   -moz-box-direction: normal;
+				    -ms-flex-direction: row;
+				        flex-direction: row;
+				-ms-flex-wrap: nowrap;
+				    flex-wrap: nowrap;
+				-webkit-box-pack: center;
+				   -moz-box-pack: center;
+				    -ms-flex-pack: center;
+				        justify-content: center;
+				padding-top: 100px;
+				.coops_item {
+					width: 250px;
+					height: 100px;
+					margin-right: 50px;
+					background: #fff;
+					position: relative;
+					&:nth-of-type(2) {
+						margin-right: 0;
+					}
+					img {
+						position: absolute;
+						left: 0;
+						top: 0;
+						right: 0;
+						bottom: 0;
+						margin: auto;
+					}
+				}
+			}
+			@media screen and (max-width: 768px) {
+				padding-top: 0;
+				padding-bottom: 20px;
+				.coops {
+					padding-top: 30px;
+					flex-direction: column;
+					align-items: center;
+					.coops_item {
+						width: 200px;
+						height: 100px;
+						margin-bottom: 20px;
+						margin-right: 0;
+					}
+				}
+			}
+
+		}
+	}
+}
