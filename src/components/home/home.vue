@@ -212,7 +212,20 @@
 			
 		},
 		mounted: function(){
+			//监听滚动；
 			window.addEventListener('scroll', this.menu);
+
+			//菜单隐藏；
+			$(document).click(function(){
+				$('.el-menu-vertical-demo').hide();
+			});
+
+			$('.el-menu-vertical-demo').click(function(event){
+				event.stopPropagation();
+			});
+			$('.menu_m').click(function(event){
+				event.stopPropagation();
+			});
 
 			// console.log( window.document.body.offsetWidth, window.screen.availWidth, window.innerWidth)		
 			const that = this;

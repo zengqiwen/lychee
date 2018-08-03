@@ -5,25 +5,28 @@ const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf');
 var webpack = require('webpack');
 
+require("babel-polyfill"); //es5
+//import "babel-polyfill"; //es6
+
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
 
 const createLintingRule = () => ({
-  test: /\.(js|vue)$/,
-  loader: 'eslint-loader',
-  enforce: 'pre',
-  include: [resolve('src'), resolve('test')],
-  options: {
-    formatter: require('eslint-friendly-formatter'),
-    emitWarning: !config.dev.showEslintErrorsInOverlay
-  }
+  // test: /\.(js|vue)$/,
+  // loader: 'eslint-loader',
+  // enforce: 'pre',
+  // include: [resolve('src'), resolve('test')],
+  // options: {
+  //   formatter: require('eslint-friendly-formatter'),
+  //   emitWarning: !config.dev.showEslintErrorsInOverlay
+  // }
 })
 
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
-    app: './src/main.js'
+    app: ['babel-polyfill', './src/main.js']
   },
   externals: {
     'BMap': 'BMap',

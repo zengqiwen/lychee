@@ -191,7 +191,7 @@
 						</div>
 					</div>
 					<div class="col-md-3 col-sm-3 col-xs-6">
-						<div class="coop-partner" @click = "abc">
+						<div class="coop-partner">
 							<img src="../../assets/imgs/coop-mingcheng.png">
 						</div>
 					</div>
@@ -206,7 +206,6 @@
 <script>
 	import Bscroll from 'better-scroll';
 	import './index.scss';
-	import Swiper from 'swiper'; 
 	export default {
 		data: function(){
 			return {

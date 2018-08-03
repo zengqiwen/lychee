@@ -18,6 +18,9 @@ Vue.use(VueAwesomeSwiper);
 //字体图标；
 import './assets/font-awesome/css/font-awesome.css';
 
+//兼容ie及手机端；
+import 'babel-polyfill';
+
 import $ from 'jquery';
 
 //bootstrap;
