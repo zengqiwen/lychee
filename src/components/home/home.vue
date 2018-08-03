@@ -52,7 +52,7 @@
 	  			      	</el-dropdown-menu>
 	  			    </el-dropdown> -->
 	  			    <div class = "menu_m">
-	  			    	<span @click = "showMenu">MENU</span>
+	  			    	<span @click = "showMenu" class = "menu_btn">MENU</span>
 		  			    <el-menu v-if = "screenWidth <= 768" default-active="2" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" :unique-opened="true" style = "borderLeft: 1px solid #ccc;" >
 		  			    	<div class="menu_list_m" 
 		  			    		v-for="(item,index) in $router.options.routes[0].children" 
@@ -85,12 +85,11 @@
 				</el-col>
 			</el-row>
 		</div>
-		<router-view class="section"></router-view>
+		<router-view class="section" @click = "abc"></router-view>
 		<div class = "toTop" @click = "toTop" v-if = "up">
 			<img src="../../assets/imgs/toTop.png" alt = "">
 		</div>
 		<Foot></Foot>
-
 	</div>
 </template>
 <script>
@@ -167,6 +166,9 @@
 			}
 		},
 		methods: {
+			abc: function(){
+				console.log(2);
+			},
 			goto: function(e){
 				this.$router.push(e);
 				$('.el-menu-vertical-demo').hide(300);
@@ -216,16 +218,16 @@
 			window.addEventListener('scroll', this.menu);
 
 			//菜单隐藏；
-			$(document).click(function(){
+			$("#app").click(function(){
 				$('.el-menu-vertical-demo').hide();
 			});
 
-			$('.el-menu-vertical-demo').click(function(event){
-				event.stopPropagation();
-			});
 			$('.menu_m').click(function(event){
 				event.stopPropagation();
 			});
+			// $('.menu_btn').click(function(event){
+			// 	event.stopPropagation();
+			// });
 
 			// console.log( window.document.body.offsetWidth, window.screen.availWidth, window.innerWidth)		
 			const that = this;
